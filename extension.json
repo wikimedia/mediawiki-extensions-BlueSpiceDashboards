@@ -99,5 +99,6 @@
 		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates",
 		"UnitTestsList": "Dashboards::onUnitTestsList"
 	},
+	"load_composer_autoloader": true,
 	"manifest_version": 1
 }
