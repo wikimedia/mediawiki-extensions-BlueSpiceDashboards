@@ -41,8 +41,6 @@ class Dashboards extends BsExtensionMW {
 	public function  initExt() {
 		wfProfileIn( 'BS::'.__METHOD__ );
 
-		BsConfig::registerVar('MW::Dashboards::UserDashboardOnLogo', false, BsConfig::LEVEL_USER|BsConfig::TYPE_BOOL, 'bs-dashboards-pref-userdashboardonlogo', 'toggle');
-
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'PersonalUrls' );

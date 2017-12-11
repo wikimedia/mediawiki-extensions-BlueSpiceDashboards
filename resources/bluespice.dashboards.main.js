@@ -1,5 +1,5 @@
 $(function(){
-	if ( mw.user.options.get( 'MW::Dashboards::UserDashboardOnLogo', false ) == true ) {
+	if ( mw.user.options.get( 'bs-dashboards-pref-userdashboardonlogo', false ) == true ) {
 
 		var $logoAnchor = $('#p-logo a').first(); //MediaWiki Skin
 		if( $logoAnchor.length == 0 ) {

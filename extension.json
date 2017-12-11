@@ -29,6 +29,9 @@
 			"i18n"
 		]
 	},
+	"DefaultUserOptions": {
+		"bs-dashboards-userdashboardonlogo" : false
+	},
 	"ExtensionMessagesFiles": {
 		"DashboardsAlias": "languages/Dashboards.alias.php"
 	},
@@ -96,6 +99,7 @@
 		"remoteExtPath": "BlueSpiceDashboards/resources"
 	},
 	"Hooks": {
+		"GetPreferences": "\\BlueSpice\\Dashboards\\Hook\\GetPreferences\\AddUserDashboardOnLogo::callback",
 		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates",
 		"UnitTestsList": "Dashboards::onUnitTestsList"
 	},
