@@ -4,7 +4,7 @@ namespace BlueSpice\Dashboards\Hook\GetPreferences;
 
 use BlueSpice\Hook\GetPreferences;
 
-class AddModus extends GetPreferences {
+class AddUserDashboardOnLogo extends GetPreferences {
 	protected function doProcess() {
 		$this->preferences['bs-dashboards-pref-userdashboardonlogo'] = array(
 			'type' => 'toggle',
