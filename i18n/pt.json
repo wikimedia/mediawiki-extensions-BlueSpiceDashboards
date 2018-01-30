@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"bs-dashboards-desc": "Fornece painéis de controlo para utilizadores e administradores",
@@ -10,7 +11,7 @@
 	"bs-dashboards-addportlet": "Adicionar <i>portlet</i>",
 	"bs-dashboards-portlets": "Portlets",
 	"prefs-dashboards": "Painéis de controlo",
-	"bs-dashboards-pref-userdashboardonlogo": "O logótipo do site tem hiperligação ao painel de controlo do utilizador",
+	"bs-dashboards-pref-userdashboardonlogo": "O logótipo do sítio tem hiperligação ao painel de controlo do utilizador",
 	"admindashboard": "Painel de administrador",
 	"userdashboard": "Painel do utilizador",
 	"bs-dashboard-userportlet-calendar-title": "Calendário",
