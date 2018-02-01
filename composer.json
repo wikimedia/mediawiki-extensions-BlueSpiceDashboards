@@ -2,7 +2,7 @@
 	"name": "mediawiki/blue-spice-dashboards",
 	"type": "mediawiki-extension",
 	"description": "Provides dashboards for users and administrators",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0"
 	},
