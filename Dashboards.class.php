@@ -39,8 +39,6 @@ class Dashboards extends BsExtensionMW {
 	 * Initialization of Dashboards extension
 	 */
 	public function  initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'ParserFirstCallInit' );
 		$this->setHook( 'PersonalUrls' );
@@ -49,8 +47,6 @@ class Dashboards extends BsExtensionMW {
 		//$this->setHook( 'BSInsertMagicAjaxGetData' );
 
 		$this->mCore->registerPermission( 'dashboards-viewspecialpage-userdashboard', array('user'), array( 'type' => 'global' ) );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**
