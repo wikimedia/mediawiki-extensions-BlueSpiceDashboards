@@ -9,6 +9,9 @@
 	],
 	"descriptionmsg": "bs-dashboards-desc",
 	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
 	"bsgExtensions": {
 		"BlueSpiceDashboards": {
 			"className": "Dashboards",

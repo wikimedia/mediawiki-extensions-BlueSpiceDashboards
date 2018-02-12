@@ -30,9 +30,9 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 			$bHasChange = false;
 
 			try{
-				MediaWiki\suppressWarnings();
+				Wikimedia\suppressWarnings();
 				$aPortalConfig = unserialize( $row->dc_config ); //backward compatible handling
-				MediaWiki\restoreWarnings();
+				Wikimedia\restoreWarnings();
 			}catch(Exception $e){
 				$this->output( "Object in json only string\n" );
 			}
