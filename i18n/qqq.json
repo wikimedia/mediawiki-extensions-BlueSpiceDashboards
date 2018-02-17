@@ -6,7 +6,8 @@
 			"Robby",
 			"Shirayuki",
 			"Leonid Verhovskij <verhovskij@hallowelt.com>",
-			"Umherirrender"
+			"Umherirrender",
+			"Liuxinyu970226"
 		]
 	},
 	"bs-dashboards-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of dashboards extension",
@@ -19,9 +20,9 @@
 	"userdashboard": "Special page name for user dashboard.\n\nSee also:\n* {{msg-mw|Admindashboard}}",
 	"bs-dashboard-userportlet-calendar-title": "Portlet title for calendar\n{{Identical|Calendar}}",
 	"bs-dashboard-userportlet-calendar-description": "Portlet description for calendar\n{{Identical|Calendar}}",
-	"bs-dashboard-userportlet-wikipage-title": "Portlet title for wikipage widget",
+	"bs-dashboard-userportlet-wikipage-title": "Portlet title for wikipage widget\n{{Identical|Wiki page}}",
 	"bs-dashboard-userportlet-wikipage-description": "Portlet description for wikipage widget",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "Label for wiki article parameter used in config dialog",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Label for wiki article parameter used in config dialog\n{{Identical|Wiki page}}",
 	"apihelp-bs-dashboard-task-param-dc": "Label for cache control parameter in api call\n{{doc-apihelp-param|bs-dashboard-task|dc}}",
 	"apihelp-bs-dashboards-store-description": "Describes the API endpoint that lists available portlets\n{{doc-apihelp-description|bs-dashboards-store}}",
 	"apihelp-bs-dashboards-store-summary": "Describes the API endpoint that lists available portlets\n{{doc-apihelp-summary|bs-dashboards-store}}",
