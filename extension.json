@@ -12,12 +12,39 @@
 	"requires": {
 		"MediaWiki": ">= 1.31.0"
 	},
-	"bsgExtensions": {
-		"BlueSpiceDashboards": {
-			"className": "Dashboards",
-			"extPath": "/BlueSpiceDashboards"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceDashboards": {
+					"className": "Dashboards",
+					"extPath": "/BlueSpiceDashboards"
+				}
+			},
+			"PermissionRegistry": {
+				"dashboards-viewspecialpage-userdashboard": {
+					"type": "global",
+					"roles": [
+						"editor",
+						"admin"
+					]
+				}
+			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"dashboards-viewspecialpage-userdashboard": false
+		},
+		"user": {
+			"dashboards-viewspecialpage-userdashboard": true
+		},
+		"sysop": {
+			"dashboards-viewspecialpage-userdashboard": true
+		}
+	},
+	"AvailableRights": [
+		"dashboards-viewspecialpage-userdashboard"
+	],
 	"SpecialPages": {
 		"AdminDashboard": "SpecialAdminDashboard",
 		"UserDashboard": "SpecialUserDashboard"
@@ -107,5 +134,5 @@
 		"UnitTestsList": "Dashboards::onUnitTestsList"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
