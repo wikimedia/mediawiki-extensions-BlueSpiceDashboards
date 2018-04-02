@@ -5,6 +5,13 @@
 			"Guycn2"
 		]
 	},
+	"bs-dashboards-desc": "אספקת לוחות בקרה עבור משתמשים ועבור מפעילי מערכת",
+	"bs-specialadmindashboard-label": "לוח בקרה",
+	"bs-dashboards-addportlet": "הוספת מודול",
+	"bs-dashboards-portlets": "מודולים",
+	"prefs-dashboards": "לוחות בקרה",
+	"admindashboard": "לוח בקרה למפעיל מערכת",
+	"userdashboard": "לוח בקרה למשתמש",
 	"bs-dashboard-userportlet-calendar-title": "לוח שנה",
 	"bs-dashboard-userportlet-calendar-description": "לוח שנה",
 	"bs-dashboard-userportlet-wikipage-title": "דף ויקי",
