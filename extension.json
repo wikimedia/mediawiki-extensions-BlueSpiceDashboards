@@ -130,8 +130,7 @@
 	},
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Dashboards\\Hook\\GetPreferences\\AddUserDashboardOnLogo::callback",
-		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates",
-		"UnitTestsList": "Dashboards::onUnitTestsList"
+		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
