@@ -25,5 +25,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "Salva a configuração do painel",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Retorna conteúdo para alguns widgets do painel",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Retorna conteúdo para alguns widgets do painel",
-	"action-dashboards-viewspecialpage-userdashboard": "ver a página especial \"{{int:userdashboard}}\""
+	"action-dashboards-viewspecialpage-userdashboard": "ver a página especial \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Concede acesso à página especial [[Special:UserDashboard]]."
 }

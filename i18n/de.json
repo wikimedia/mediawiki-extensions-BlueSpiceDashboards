@@ -22,5 +22,6 @@
 	"apihelp-bs-dashboards-store-description": "Listet alle verfügbaren Portlets auf",
 	"apihelp-bs-dashboards-tasks-description": "Speichert die Dashboard-Konfiguration",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Gibt den Inhalt für einige Dashboard-Widgets zurück",
-	"action-dashboards-viewspecialpage-userdashboard": "die Spezialseite „{{int:userdashboard}}“ anzusehen"
+	"action-dashboards-viewspecialpage-userdashboard": "die Spezialseite „{{int:userdashboard}}“ anzusehen",
+	"right-dashboards-viewspecialpage-userdashboard": "Zugriff auf die Spezialseite [[Special:UserDashboard]] gewähren."
 }

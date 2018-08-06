@@ -24,5 +24,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "Guarda la configuración del tableru",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Devuelve'l conteníu de dalgunos widgets de tableru",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Devuelve'l conteníu de dalgunos widgets de tableru",
-	"action-dashboards-viewspecialpage-userdashboard": "ver la páxina especial \"{{int:userdashboard}}\""
+	"action-dashboards-viewspecialpage-userdashboard": "ver la páxina especial \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Permite l'accesu a la páxina especial [[Special:UserDashboard]]."
 }

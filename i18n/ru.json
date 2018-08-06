@@ -5,7 +5,8 @@
 			"HarpyWar",
 			"Meshkov.a",
 			"Kaganer",
-			"Facenapalm"
+			"Facenapalm",
+			"Vlad5250"
 		]
 	},
 	"bs-dashboards-desc": "Предоставляет панель управления для пользователей и администраторов",
@@ -18,5 +19,6 @@
 	"userdashboard": "Панель участника",
 	"bs-dashboard-userportlet-calendar-title": "Календарь",
 	"bs-dashboard-userportlet-calendar-description": "Календарь",
-	"action-dashboards-viewspecialpage-userdashboard": "просмотр служебной страницы «{{int:userdashboard}}»"
+	"action-dashboards-viewspecialpage-userdashboard": "просмотр служебной страницы «{{int:userdashboard}}»",
+	"right-dashboards-viewspecialpage-userdashboard": "доступ к служебной странице [[Special:UserDashboard]]."
 }

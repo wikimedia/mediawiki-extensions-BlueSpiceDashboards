@@ -26,5 +26,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "儲存資訊面板設置",
 	"apihelp-bs-dashboards-widgets-tasks-description": "為一些資訊面板小工具返回內容",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "為一些資訊面板小工具返回內容",
-	"action-dashboards-viewspecialpage-userdashboard": "檢視特殊頁面「{{int:userdashboard}}」"
+	"action-dashboards-viewspecialpage-userdashboard": "檢視特殊頁面「{{int:userdashboard}}」",
+	"right-dashboards-viewspecialpage-userdashboard": "授予存取特殊頁面 [[Special:UserDashboard]] 的權限。"
 }
