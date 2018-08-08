@@ -5,7 +5,8 @@
 	"url": "https://help.bluespice.com/index.php/DashBoards",
 	"author": [
 		"Robert Vogel",
-		"Stephan Muggli"
+		"Stephan Muggli",
+		"Peter Böhm"
 	],
 	"descriptionmsg": "bs-dashboards-desc",
 	"type": "bluespice",
@@ -130,6 +131,10 @@
 	},
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Dashboards\\Hook\\GetPreferences\\AddUserDashboardOnLogo::callback",
+		"PersonalUrls": "\\BlueSpice\\Dashboards\\Hook\\PersonalUrls\\AddDashboardUrls::callback",
+		"BeforePageDisplay": "\\BlueSpice\\Dashboards\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalConfig\\AddConfig::callback",
+		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalPortlets\\AddPortlets::callback",
 		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates"
 	},
 	"load_composer_autoloader": true,
