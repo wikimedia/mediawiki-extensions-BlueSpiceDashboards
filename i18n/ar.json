@@ -25,5 +25,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "يحفظ تكوين لوحة المعلومات",
 	"apihelp-bs-dashboards-widgets-tasks-description": "إرجاع المحتوى لبعض أدوات لوحة المعلومات",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "إرجاع المحتوى لبعض أدوات لوحة المعلومات",
-	"action-dashboards-viewspecialpage-userdashboard": "عرض الصفحة الخاصة \"{{int:userdashboard}}\""
+	"action-dashboards-viewspecialpage-userdashboard": "عرض الصفحة الخاصة \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "يمنح الوصول إلى الصفحة الخاصة [[Special:UserDashboard]]."
 }
