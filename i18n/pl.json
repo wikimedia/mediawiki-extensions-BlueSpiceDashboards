@@ -10,5 +10,6 @@
 	"bs-dashboard-userportlet-calendar-title": "Kalendarz",
 	"bs-dashboard-userportlet-calendar-description": "Kalendarz",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Strona wiki",
-	"action-dashboards-viewspecialpage-userdashboard": "zobacz stronę specjalną „{{int:userdashboard}}”"
+	"action-dashboards-viewspecialpage-userdashboard": "zobacz stronę specjalną „{{int:userdashboard}}”",
+	"right-dashboards-viewspecialpage-userdashboard": "Przyznawanie dostępu do strony specjalnej [[Special:UserDashboard]]."
 }
