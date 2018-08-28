@@ -35,39 +35,6 @@
  * @subpackage Dashboards
  */
 class Dashboards extends BsExtensionMW {
-	/**
-	 * Initialization of Dashboards extension
-	 */
-	public function  initExt() {
-		$this->setHook( 'BeforePageDisplay' );
-		$this->setHook( 'ParserFirstCallInit' );
-		$this->setHook( 'PersonalUrls' );
-		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
-		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
-		//$this->setHook( 'BSInsertMagicAjaxGetData' );
-	}
-
-	/**
-	 * Hook-Handler for MediaWiki 'BeforePageDisplay' hook. Sets context if needed.
-	 * @param OutputPage $oOutputPage
-	 * @param Skin $oSkin
-	 * @return bool
-	 */
-	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
-		$oOutputPage->addModules( 'ext.bluespice.dashboards' );
-
-		return true;
-	}
-
-	/**
-	 * Registers the  <bs:dashboard /> tag
-	 * @param Parser $parser
-	 * @return boolean Always true to keep Hook running
-	 */
-	public function onParserFirstCallInit( &$parser ) {
-		$parser->setHook( 'bs:dashboard', array( $this, 'onTagDasboard' ) );
-		return true;
-	}
 
 	/**
 	 * Adds the table to the database
@@ -84,60 +51,7 @@ class Dashboards extends BsExtensionMW {
 		return true;
 	}
 
-	public function onPersonalUrls( &$aPersonal_urls, &$oTitle ) {
-		$oUser = RequestContext::getMain()->getUser();
-		if ( $oUser->isLoggedIn() ) {
-			$aPersonal_urls['userdashboard'] = array(
-				'href' => SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
-				'text' => SpecialPageFactory::getPage( 'UserDashboard' )->getDescription()
-			);
-		}
-
-		if ( in_array( 'sysop', $oUser->getGroups() ) ) {
-			$aPersonal_urls['admindashboard'] = array(
-				'href' => SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
-				'text' => SpecialPageFactory::getPage( 'AdminDashboard' )->getDescription()
-			);
-		}
-
-		return true;
-	}
-
 	protected static $aPageTagIdentifiers = array();
-
-	/**
-	 * Renders <bs:dasboard />
-	 * @param string $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return string The resulting markup
-	 */
-	public function onTagDasboard( $input, array $args, Parser $parser, PPFrame $frame ) {
-		throw new MWException( 'Not implemented' );
-
-		return Html::element(
-			'div',
-			array(
-				'class' => 'bs-dashboard-tag',
-				'data-identifier' => 0
-			)
-		);
-	}
-
-	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
-		if ( $type != 'tags' ) return true;
-
-		$oResponse->result[] = array(
-			'id'   => 'bs:dashboard',
-			'type' => 'tag',
-			'name' => 'dashboard',
-			'desc' => wfMessage( 'bs-dashboards-tag-desc' )->plain(),
-			'code' => '<bs:dashboard />',
-		);
-
-		return true;
-	}
 
 	/**
 	 * AjaxDispatcher callback for saving a user portal config
@@ -165,47 +79,4 @@ class Dashboards extends BsExtensionMW {
 
 		return $oResponse;
 	}
-
-	public function onBSDashboardsUserDashboardPortalConfig( $oCaller, &$aPortalConfig, $bIsDefault ) {
-		$aPortalConfig[0][] = array(
-			'type'  => 'BS.Dashboards.CalendarPortlet',
-			'config' => array(
-				'title' => wfMessage( 'bs-dashboard-userportlet-calendar-title' )->plain()
-			)
-		);
-		$aPortalConfig[0][] = array(
-			'type'  => 'BS.Dashboards.WikiPagePortlet',
-			'config' => array(
-				'title' => wfMessage( 'bs-dashboard-userportlet-wikipage-title' )->plain()
-			)
-		);
-		return true;
-	}
-
-	/**
-	 *
-	 * @global OutputPage $wgOut
-	 * @param type $aPortlets
-	 * @return boolean
-	 */
-	public function onBSDashboardsUserDashboardPortalPortlets( &$aPortlets ) {
-		$aPortlets[] = array(
-			'type'  => 'BS.Dashboards.CalendarPortlet',
-			'config' => array(
-				'title' => wfMessage( 'bs-dashboard-userportlet-calendar-title' )->plain(),
-			),
-			'title' => wfMessage( 'bs-dashboard-userportlet-calendar-title' )->plain(),
-			'description' => wfMessage( 'bs-dashboard-userportlet-calendar-description' )->plain()
-		);
-		$aPortlets[] = array(
-			'type'  => 'BS.Dashboards.WikiPagePortlet',
-			'config' => array(
-				'title' => wfMessage( 'bs-dashboard-userportlet-wikipage-title' )->plain(),
-			),
-			'title' => wfMessage( 'bs-dashboard-userportlet-wikipage-title' )->plain(),
-			'description' => wfMessage( 'bs-dashboard-userportlet-wikipage-description' )->plain()
-		);
-		return true;
-	}
-
 }
