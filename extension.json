@@ -25,8 +25,15 @@
 				"dashboards-viewspecialpage-userdashboard": {
 					"type": "global",
 					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"commenter",
 						"editor",
-						"admin"
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
 					]
 				}
 			}
