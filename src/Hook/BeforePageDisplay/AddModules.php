@@ -8,6 +8,7 @@ class AddModules extends BeforePageDisplay {
 
 	protected function doProcess() {
 		$this->out->addModules( 'ext.bluespice.dashboards' );
+		$this->out->addModuleStyles( 'ext.bluespice.dashboards.styles' );
 		return true;
 	}
 

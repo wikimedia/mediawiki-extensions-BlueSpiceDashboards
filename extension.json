@@ -91,12 +91,14 @@
 				"tooltip-p-logo"
 			]
 		},
+		"ext.bluespice.dashboards.styles": {
+			"styles": [
+				"bluespice.dashboards.css"
+			]
+		},
 		"ext.bluespice.dashboards.portletCatalog": {
 			"scripts": [
 				"bluespice.dashboards.portletcatalog.js"
-			],
-			"styles": [
-				"bluespice.dashboards.css"
 			],
 			"dependencies": [
 				"ext.bluespice.extjs.BS.portal"
@@ -111,7 +113,6 @@
 			"scripts": [
 				"bluespice.dashboards.userDashboard.js"
 			],
-			"styles": [],
 			"dependencies": [
 				"ext.bluespice.dashboards.portletCatalog"
 			],
@@ -124,7 +125,6 @@
 			"scripts": [
 				"bluespice.dashboards.adminDashboard.js"
 			],
-			"styles": [],
 			"dependencies": [
 				"ext.bluespice.dashboards.portletCatalog"
 			],
