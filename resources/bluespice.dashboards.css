@@ -1,6 +1,13 @@
-#bs-dashboard-add { 
+#bs-dashboard-add {
 	float: right;
 	margin-right: 20px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+#bs-dashboard-add:hover {
+	background-position-y: -32px;
 }
 
 .bs-portlets-desc {
