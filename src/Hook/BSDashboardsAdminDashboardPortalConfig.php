@@ -20,14 +20,14 @@ abstract class BSDashboardsAdminDashboardPortalConfig extends Hook {
 
 	/**
 	 *
-	 * @var \BsSpecialPage $caller
+	 * @var \BlueSpice\SpecialPage $caller
 	 */
 	protected $caller;
 
 	/**
 	 * Fired in SpecialAdminDashboard::execute
 	 *
-	 * @param \BsSpecialPage $caller
+	 * @param \BlueSpice\SpecialPage $caller
 	 * @param array &$portalConfig reference to array portlet configs
 	 * @param boolean $isDefault
 	 * @return boolean
@@ -44,7 +44,7 @@ abstract class BSDashboardsAdminDashboardPortalConfig extends Hook {
 	 *
 	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param \BsSpecialPage $caller
+	 * @param \BlueSpice\SpecialPage $caller
 	 * @param array &$portalConfig reference to array portlet configs
 	 * @param boolean $isDefault
 	 */
