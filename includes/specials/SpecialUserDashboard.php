@@ -1,6 +1,6 @@
 <?php
 
-class SpecialUserDashboard extends BsSpecialPage {
+class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
 		parent::__construct( 'UserDashboard' , 'dashboards-viewspecialpage-userdashboard' );
 	}
@@ -63,7 +63,4 @@ class SpecialUserDashboard extends BsSpecialPage {
 		return false;
 	}
 
-	protected function getGroupName() {
-		return 'bluespice';
-	}
 }

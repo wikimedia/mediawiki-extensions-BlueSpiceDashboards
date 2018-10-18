@@ -1,6 +1,6 @@
 <?php
 
-class SpecialAdminDashboard extends BsSpecialPage {
+class SpecialAdminDashboard extends \BlueSpice\SpecialPage {
 	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
 		parent::__construct( 'AdminDashboard', 'wikiadmin' );
 	}
@@ -72,7 +72,4 @@ class SpecialAdminDashboard extends BsSpecialPage {
 		return false;
 	}
 
-	protected function getGroupName() {
-		return 'bluespice';
-	}
 }
