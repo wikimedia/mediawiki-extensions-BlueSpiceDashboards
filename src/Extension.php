@@ -29,11 +29,11 @@
  * @filesource
  */
 
+namespace BlueSpice\Dashboards;
+
 /**
  * Base class for Dashboards extension
  * @package BlueSpice_Extensions
  * @subpackage Dashboards
  */
-class Dashboards extends BsExtensionMW {
-
-}
+class Extension extends \BlueSpice\Extension {}

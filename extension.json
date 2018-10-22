@@ -11,13 +11,16 @@
 	"descriptionmsg": "bs-dashboards-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 3.0.0"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceDashboards": {
-					"className": "Dashboards",
+					"className": "\\BlueSpice\\Dashboards\\Extension",
 					"extPath": "/BlueSpiceDashboards"
 				}
 			},
@@ -74,7 +77,6 @@
 		"DashboardsAlias": "languages/Dashboards.alias.php"
 	},
 	"AutoloadClasses": {
-		"Dashboards": "Dashboards.class.php",
 		"SpecialAdminDashboard": "includes/specials/SpecialAdminDashboard.php",
 		"SpecialUserDashboard": "includes/specials/SpecialUserDashboard.php",
 		"BSApiDashboardTasks": "includes/api/BSApiDashboardTasks.php",
