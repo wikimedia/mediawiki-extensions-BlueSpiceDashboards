@@ -36,19 +36,4 @@
  */
 class Dashboards extends BsExtensionMW {
 
-	/**
-	 * Adds the table to the database
-	 * @param DatabaseUpdater $updater
-	 * @return boolean Always true to keep Hook running
-	 */
-	public static function getSchemaUpdates( $updater ) {
-		$updater->addExtensionTable(
-			'bs_dashboards_configs',
-			__DIR__ .'/db/mysql/bs_dashboards_configs.sql'
-		);
-
-		$updater->addPostDatabaseUpdateMaintenance( BSDashBoardsClearConfigMaintenance::class );
-		return true;
-	}
-
 }
