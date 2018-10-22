@@ -141,7 +141,10 @@
 		"BeforePageDisplay": "\\BlueSpice\\Dashboards\\Hook\\BeforePageDisplay\\AddModules::callback",
 		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalConfig\\AddConfig::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalPortlets\\AddPortlets::callback",
-		"LoadExtensionSchemaUpdates": "Dashboards::getSchemaUpdates"
+		"LoadExtensionSchemaUpdates":  [
+			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddDashboardConfigsTable::callback",
+			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddClearConfigPostDatabaseUpdateMaintenance::callback"
+		]
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
