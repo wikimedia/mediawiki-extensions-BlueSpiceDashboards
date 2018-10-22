@@ -51,32 +51,4 @@ class Dashboards extends BsExtensionMW {
 		return true;
 	}
 
-	protected static $aPageTagIdentifiers = array();
-
-	/**
-	 * AjaxDispatcher callback for saving a user portal config
-	 * @return BsCAResponse
-	 */
-	public static function saveUserDashboardConfig() {
-		$oResponse = BsCAResponse::newFromPermission( 'read' );
-		$aPortalConfig = RequestContext::getMain()->getRequest()->getVal( 'portletConfig', '' );
-
-		$oDbw = wfGetDB( DB_MASTER );
-		$iUserId = RequestContext::getMain()->getUser()->getId();
-		$oDbw->replace(
-				'bs_dashboards_configs',
-				array(
-					'dc_identifier'
-				),
-				array(
-					'dc_type' => 'user',
-					'dc_identifier' => $iUserId,
-					'dc_config' => serialize( $aPortalConfig ),
-					'dc_timestamp' => '',
-				),
-				__METHOD__
-		);
-
-		return $oResponse;
-	}
 }
