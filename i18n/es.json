@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Fitoschido"
+			"Fitoschido",
+			"Carlosmg.dg"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneles para usuarios y administradores",
@@ -15,6 +16,7 @@
 	"userdashboard": "Panel del usuario",
 	"bs-dashboard-userportlet-calendar-title": "Calendario",
 	"bs-dashboard-userportlet-calendar-description": "Calendario",
+	"bs-dashboard-userportlet-wikipage-title": "WikiPage",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Página wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parámetro de control de caché. Usado por ExtJS.",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la página especial \"{{int:userdashboard}}\"",
