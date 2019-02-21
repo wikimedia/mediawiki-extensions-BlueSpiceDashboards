@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alirezaaa"
+			"Alirezaaa",
+			"Amirsara"
 		]
 	},
 	"bs-dashboards-desc": "برای کاربران و مدیران داشبورد فراهم می‌کند",
@@ -13,5 +14,7 @@
 	"admindashboard": "داشبورد مدیریت",
 	"userdashboard": "داشبورد کاربری",
 	"bs-dashboard-userportlet-calendar-title": "تقویم",
-	"bs-dashboard-userportlet-calendar-description": "تقویم"
+	"bs-dashboard-userportlet-calendar-description": "تقویم",
+	"bs-dashboard-userportlet-wikipage-title": "ویکی‌صفحه",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "صفحه ویکی"
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-dashboards-desc": "يوفر لوحات معلومات للمستخدمين والإداريين",
@@ -10,7 +11,7 @@
 	"bs-dashboards-addportlet": "أضف portlet",
 	"bs-dashboards-portlets": "المداخل",
 	"prefs-dashboards": "لوحات البيانات",
-	"bs-dashboards-pref-userdashboardonlogo": "روابط شعار الموقع للوحة تحكم المستخدم",
+	"bs-dashboards-pref-userdashboardonlogo": "وصلات شعار الموقع للوحة تحكم المستخدم",
 	"admindashboard": "لوحة تحكم الإداري",
 	"userdashboard": "لوحة تحكم المستخدم",
 	"bs-dashboard-userportlet-calendar-title": "التقويم",
