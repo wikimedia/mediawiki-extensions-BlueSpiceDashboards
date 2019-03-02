@@ -6,7 +6,8 @@
 			"Meshkov.a",
 			"Kaganer",
 			"Facenapalm",
-			"Vlad5250"
+			"Vlad5250",
+			"Romanko Mikhail"
 		]
 	},
 	"bs-dashboards-desc": "Предоставляет панель управления для пользователей и администраторов",
@@ -19,6 +20,9 @@
 	"userdashboard": "Панель участника",
 	"bs-dashboard-userportlet-calendar-title": "Календарь",
 	"bs-dashboard-userportlet-calendar-description": "Календарь",
+	"bs-dashboard-userportlet-wikipage-title": "Вики-страница",
+	"bs-dashboard-userportlet-wikipage-description": "Используйте вики-страницу для определения виджета",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Вики-страница",
 	"action-dashboards-viewspecialpage-userdashboard": "просмотр служебной страницы «{{int:userdashboard}}»",
 	"right-dashboards-viewspecialpage-userdashboard": "доступ к служебной странице [[Special:UserDashboard]]."
 }
