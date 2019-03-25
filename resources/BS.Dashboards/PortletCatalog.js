@@ -20,7 +20,7 @@ Ext.define( 'BS.Dashboards.PortletCatalog', {
 					}),
 					reader: {
 						type: 'json',
-						root: 'results',
+						rootProperty: 'results',
 						idProperty: 'title'
 					}
 				},

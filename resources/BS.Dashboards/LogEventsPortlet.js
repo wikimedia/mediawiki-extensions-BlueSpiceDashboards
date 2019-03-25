@@ -13,7 +13,7 @@ Ext.define('BS.Dashboards.LogEventsPortlet', {
 					url: mw.util.wikiScript('api'),
 					reader: {
 						type: 'json',
-						root: 'query.logevents',
+						rootProperty: 'query.logevents',
 						idProperty: 'logid'
 					},
 					extraParams: {
