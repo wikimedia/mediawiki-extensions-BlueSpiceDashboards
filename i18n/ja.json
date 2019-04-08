@@ -18,5 +18,6 @@
 	"bs-dashboard-userportlet-calendar-description": "カレンダー",
 	"bs-dashboard-userportlet-wikipage-title": "ウィキページ",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "ウィキページ",
-	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] の利用を許可します。"
+	"action-dashboards-viewspecialpage-userdashboard": "特別ページ「{{int:userdashboard}}」の閲覧",
+	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] を利用"
 }
