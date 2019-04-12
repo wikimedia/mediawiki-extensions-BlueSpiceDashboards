@@ -17,10 +17,8 @@ class SpecialAdminDashboard extends \BlueSpice\SpecialPage {
 		$this->getAdminConfig();
 
 		$this->getOutput()->addHTML(
-			Html::element( 'div', array( 'id' => 'bs-dashboards-admindashboard' ) )
+			Html::element( 'div', [ 'id' => 'bs-dashboards-admindashboard' ] )
 		);
-
-		return;
 	}
 
 	private function getAdminConfig() {
@@ -28,7 +26,7 @@ class SpecialAdminDashboard extends \BlueSpice\SpecialPage {
 		$res = $oDbr->select(
 				'bs_dashboards_configs',
 				'*',
-				array( 'dc_type' => 'admin' ),
+				[ 'dc_type' => 'admin' ],
 				__METHOD__
 		);
 
@@ -38,13 +36,13 @@ class SpecialAdminDashboard extends \BlueSpice\SpecialPage {
 			$aPortalConfig = FormatJson::decode( $aPortalConfig );
 		} else {
 			$bIsDefault = true;
-			$aPortalConfig = array(
-				array(),
-				array(),
-				array()
-			);
+			$aPortalConfig = [
+				[],
+				[],
+				[]
+			];
 
-			Hooks::run( 'BSDashboardsAdminDashboardPortalConfig', array( $this, &$aPortalConfig, $bIsDefault ) );
+			Hooks::run( 'BSDashboardsAdminDashboardPortalConfig', [ $this, &$aPortalConfig, $bIsDefault ] );
 		}
 
 		$sSaveBackend = 'saveAdminDashboardConfig';

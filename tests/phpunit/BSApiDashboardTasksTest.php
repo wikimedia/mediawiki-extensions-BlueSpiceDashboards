@@ -13,7 +13,6 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group Database
  * @group medium
  */
-
 class BSApiDashboardTasksTest extends BSApiTasksTestBase {
 
 	function getTokens() {
@@ -25,12 +24,11 @@ class BSApiDashboardTasksTest extends BSApiTasksTestBase {
 	}
 
 	public function testSaveAdminDashboardConfig() {
-
-		//json_encode is needed here, according to
-		//BSApiDashboardTasks::task_saveUserDashboardConfig:27 (json_decode( $aPortletConfig );)
+		// json_encode is needed here, according to
+		// BSApiDashboardTasks::task_saveUserDashboardConfig:27 (json_decode( $aPortletConfig );)
 		$data = $this->executeTask(
 			'saveAdminDashboardConfig', [
-				'portletConfig' => [ json_encode( ["someKey" => "someValue", "isFalse" => "true"] ) ]
+				'portletConfig' => [ json_encode( [ "someKey" => "someValue", "isFalse" => "true" ] ) ]
 			]
 		);
 
@@ -40,11 +38,10 @@ class BSApiDashboardTasksTest extends BSApiTasksTestBase {
 	}
 
 	public function testSaveUserDashboardConfig() {
-
 		$data = $this->executeTask(
 			'saveUserDashboardConfig',
 			[
-				'portletConfig' => [ json_encode( ["someKey" => "someValue", "isFalse" => "true"] ) ]
+				'portletConfig' => [ json_encode( [ "someKey" => "someValue", "isFalse" => "true" ] ) ]
 			]
 		);
 

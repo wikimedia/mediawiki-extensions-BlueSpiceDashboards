@@ -1,6 +1,6 @@
 <?php
 
-require_once( dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php' );
+require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	public function __construct() {
@@ -10,13 +10,13 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	}
 
 	public function doDBUpdates() {
-		$aFinalPortletList = array();
-		$aPortlets = array();
+		$aFinalPortletList = [];
+		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', array( &$aPortlets ) );
-		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', array( &$aPortlets ) );
-		Hooks::run( 'BSDashboardsGetPortlets', array( &$aPortlets ) );
-		$this->output( 'Clearing dashboards... ');
+		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', [ &$aPortlets ] );
+		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', [ &$aPortlets ] );
+		Hooks::run( 'BSDashboardsGetPortlets', [ &$aPortlets ] );
+		$this->output( 'Clearing dashboards... ' );
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			$aFinalPortletList[] = $aPortlets[$i]["type"];
 		}
@@ -24,19 +24,19 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 		$oDbr = $this->getDB( DB_REPLICA );
 		$res = $oDbr->select( 'bs_dashboards_configs', '*' );
 
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$iUser = $row->dc_identifier;
 			$sType = $row->dc_type;
 			$bHasChange = false;
 
 			try{
 				Wikimedia\suppressWarnings();
-				$aPortalConfig = unserialize( $row->dc_config ); //backward compatible handling
+				$aPortalConfig = unserialize( $row->dc_config ); // backward compatible handling
 				Wikimedia\restoreWarnings();
-			}catch(Exception $e){
+			}catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}
-			if ( $aPortalConfig === FALSE ) { //this should be the normal case
+			if ( $aPortalConfig === false ) { // this should be the normal case
 				$aPortalConfig = FormatJson::decode( $row->dc_config );
 			} else {
 				$aPortalConfig = FormatJson::decode( $aPortalConfig );
@@ -44,9 +44,9 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 				$bHasChange = true;
 			}
 
-			for ( $x = 0; $x < count( $aPortalConfig ); $x++ ){
-				for ( $y = 0; $y < count( $aPortalConfig[$x] ); $y++ ){
-					if ( !in_array( $aPortalConfig[$x][$y]->type, $aFinalPortletList ) ){
+			for ( $x = 0; $x < count( $aPortalConfig ); $x++ ) {
+				for ( $y = 0; $y < count( $aPortalConfig[$x] ); $y++ ) {
+					if ( !in_array( $aPortalConfig[$x][$y]->type, $aFinalPortletList ) ) {
 						$this->output( "Will remove " . $aPortalConfig[$x][$y]->type );
 						unset( $aPortalConfig[$x][$y] );
 						$bHasChange = true;
@@ -59,13 +59,13 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 				$oDbw = $this->getDB( DB_MASTER );
 				$oDbw->update(
 					'bs_dashboards_configs',
-					array(
-						'dc_config' => $aPortalConfig //save json string into db
-					),
-					array(
+					[
+						'dc_config' => $aPortalConfig // save json string into db
+					],
+					[
 						'dc_type' => $sType,
 						'dc_identifier' => $iUser
-					)
+					]
 				);
 			}
 		}
