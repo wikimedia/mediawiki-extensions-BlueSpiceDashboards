@@ -3,45 +3,44 @@
 class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
 	protected function makeData( $sQuery = '' ) {
+		$aPortlets = [];
 
-		$aPortlets = array();
-
-		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', array( &$aPortlets ) );
+		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', [ &$aPortlets ] );
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['group'] ) ) {
-				$aPortlets[$i]['groups'] = array( 'UserDashboard' );
+				$aPortlets[$i]['groups'] = [ 'UserDashboard' ];
 			}
 		};
 
 		$aReturnArray = $aPortlets;
 
-		$aPortlets = array();
+		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', array( &$aPortlets ) );
+		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', [ &$aPortlets ] );
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
-				$aPortlets[$i]['groups'] = array( 'AdminDashboard' );
+				$aPortlets[$i]['groups'] = [ 'AdminDashboard' ];
 			}
 		};
 
 		$aReturnArray = array_merge( $aReturnArray, $aPortlets );
 
-		$aPortlets = array();
+		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsGetPortlets', array( &$aPortlets ) );
+		Hooks::run( 'BSDashboardsGetPortlets', [ &$aPortlets ] );
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
-				$aPortlets[$i]['groups'] = array( 'UserDashboard', 'AdminDashboard' );
+				$aPortlets[$i]['groups'] = [ 'UserDashboard', 'AdminDashboard' ];
 			}
 		};
 
 		$aReturnArray = array_merge( $aReturnArray, $aPortlets );
 
 		// make sure to return objects, not arrays
-		$aReturnObjects = array();
+		$aReturnObjects = [];
 		foreach ( $aReturnArray as $aReturn ) {
 			$aReturnObjects[] = (object)$aReturn;
 		}
@@ -53,9 +52,9 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 		$aFilter = $this->getParameter( 'filter' );
 
 		foreach ( $aFilter as $oFilter ) {
-			if( $oFilter->type == 'group' ) {
+			if ( $oFilter->type == 'group' ) {
 				$bFilterApplies = $this->filterGroup( $oFilter, $aDataSet );
-				if( !$bFilterApplies ) {
+				if ( !$bFilterApplies ) {
 					return false;
 				}
 			}
@@ -65,8 +64,8 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 	}
 
 	public function filterGroup( $oFilter, $aDataSet ) {
-		if( !is_string( $oFilter->value ) ) {
-			return true; //TODO: Warning
+		if ( !is_string( $oFilter->value ) ) {
+			return true; // TODO: Warning
 		}
 		$sFieldValue = $aDataSet->groups;
 		$sFilterValue = $oFilter->value;

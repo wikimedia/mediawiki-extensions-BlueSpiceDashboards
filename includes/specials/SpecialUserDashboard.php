@@ -2,7 +2,7 @@
 
 class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
-		parent::__construct( 'UserDashboard' , 'dashboards-viewspecialpage-userdashboard' );
+		parent::__construct( 'UserDashboard', 'dashboards-viewspecialpage-userdashboard' );
 	}
 
 	/**
@@ -18,7 +18,7 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 		$res = $oDbr->select(
 				'bs_dashboards_configs',
 				'*',
-				array( 'dc_identifier' => $this->getUser()->getId() ),
+				[ 'dc_identifier' => $this->getUser()->getId() ],
 				__METHOD__
 		);
 
@@ -28,13 +28,13 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 			$aPortalConfig = FormatJson::decode( $aPortalConfig );
 		} else {
 			$bIsDefault = true;
-			$aPortalConfig = array(
-				array(),
-				array(),
-				array()
-			);
+			$aPortalConfig = [
+				[],
+				[],
+				[]
+			];
 
-			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', array( $this, &$aPortalConfig, $bIsDefault ) );
+			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', [ $this, &$aPortalConfig, $bIsDefault ] );
 		}
 
 		$sSaveBackend = 'saveUserDashboardConfig';
@@ -44,9 +44,9 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 		$this->getOutput()->addJsConfigVars( 'bsPortalConfig', $aPortalConfig );
 
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.extjs.BS.portal.css' );
-		$this->getOutput()->addModules('ext.bluespice.dashboards.userDashboard');
+		$this->getOutput()->addModules( 'ext.bluespice.dashboards.userDashboard' );
 		$this->getOutput()->addHTML(
-			Html::element( 'div', array( 'id' => 'bs-dashboards-userdashboard' ) )
+			Html::element( 'div', [ 'id' => 'bs-dashboards-userdashboard' ] )
 		);
 	}
 

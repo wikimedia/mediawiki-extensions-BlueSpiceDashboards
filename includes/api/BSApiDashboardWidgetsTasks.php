@@ -2,7 +2,7 @@
 
 class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
-	protected $aTasks = array(
+	protected $aTasks = [
 		'wikipage' => [
 			'examples' => [
 				[
@@ -17,46 +17,46 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'wikipage' => array( 'read' )
-		);
+		return [
+			'wikipage' => [ 'read' ]
+		];
 	}
 
-	public function task_wikipage(  $oTaskData, $aParams ) {
+	public function task_wikipage( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
 
 		if ( !isset( $oTaskData->wikiArticle ) ) {
 			$oResponse->success = true;
-			$oResponse->payload = array( "html" => wfMessage( 'compare-invalid-title' )->plain() );
+			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
 			return $oResponse;
 		}
 
 		$oTitle = Title::newFromText( $oTaskData->wikiArticle );
 		if ( !$oTitle ) {
 			$oResponse->success = false;
-			$oResponse->payload = array( "html" => wfMessage( 'compare-invalid-title' )->plain() );
+			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
 			return $oResponse;
 		}
 
 		if ( !$oTitle->userCan( 'read' ) ) {
 			$oResponse->success = false;
-			$oResponse->payload = array( "html" => wfMessage( 'bs-permissionerror' )->plain() );
+			$oResponse->payload = [ "html" => wfMessage( 'bs-permissionerror' )->plain() ];
 			return $oResponse;
 		}
 		$oWikiPage = WikiPage::factory( $oTitle );
 		if ( !$oWikiPage->getContent() ) {
 			$oResponse->success = false;
-			$oResponse->payload = array( "html" => wfMessage( 'compare-invalid-title' )->plain() );
+			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
 			return $oResponse;
 		}
 
 		$sHTML = $oWikiPage->getContent()->getParserOutput( $oTitle )->getText();
 
 		$oResponse->success = true;
-		$oResponse->payload = array( "html" => $sHTML );
+		$oResponse->payload = [ "html" => $sHTML ];
 		return $oResponse;
 	}
 
@@ -72,14 +72,14 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
 		return array_merge(
 			$paramList,
-			array(
-				'_dc' => array(
+			[
+				'_dc' => [
 					ApiBase::PARAM_TYPE => 'string',
 					ApiBase::PARAM_REQUIRED => false,
-					//TODO: Description
+					// TODO: Description
 					10 /*ApiBase::PARAM_HELP_MSG*/ => 'apihelp-bs-dashboard-task-param-dc',
-				)
-			)
+				]
+			]
 		);
 	}
 }

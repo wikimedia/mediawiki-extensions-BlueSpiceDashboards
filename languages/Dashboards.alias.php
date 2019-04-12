@@ -1,15 +1,15 @@
 <?php
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'AdminDashboard' => array( 'AdminDashboard','Admin dashboard' ),
-	'UserDashboard'  => array( 'UserDashboard','User dashboard' ),
-);
+$specialPageAliases['en'] = [
+	'AdminDashboard' => [ 'AdminDashboard','Admin dashboard' ],
+	'UserDashboard'  => [ 'UserDashboard','User dashboard' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'AdminDashboard' => array( 'Admin Dashboard' ),
-	'UserDashboard'  => array( 'Benutzer Dashboard' ),
-);
+$specialPageAliases['de'] = [
+	'AdminDashboard' => [ 'Admin Dashboard' ],
+	'UserDashboard'  => [ 'Benutzer Dashboard' ],
+];

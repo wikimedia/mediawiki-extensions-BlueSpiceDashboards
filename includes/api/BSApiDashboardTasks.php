@@ -2,7 +2,7 @@
 
 class BSApiDashboardTasks extends BSApiTasksBase {
 
-	protected $aTasks = array(
+	protected $aTasks = [
 		'saveAdminDashboardConfig' => [
 			'examples' => [
 				[
@@ -32,13 +32,13 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'saveAdminDashboardConfig' => array( 'wikiadmin' ),
-			'saveUserDashboardConfig' => array( 'read' )
-		);
+		return [
+			'saveAdminDashboardConfig' => [ 'wikiadmin' ],
+			'saveUserDashboardConfig' => [ 'read' ]
+		];
 	}
 
 	public function task_saveUserDashboardConfig( $oTaskData, $aParams ) {
@@ -61,15 +61,15 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		$iUserId = $this->getUser()->getId();
 		$oDbw->replace(
 				'bs_dashboards_configs',
-				array(
+				[
 					'dc_identifier'
-				),
-				array(
+				],
+				[
 					'dc_type' => 'user',
 					'dc_identifier' => $iUserId,
 					'dc_config' => $aPortletConfig,
 					'dc_timestamp' => '',
-				),
+				],
 				__METHOD__
 		);
 
@@ -91,16 +91,16 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		$oDbw = wfGetDB( DB_MASTER );
 		$oDbw->delete(
 			'bs_dashboards_configs',
-			array( 'dc_type' => 'admin' )
+			[ 'dc_type' => 'admin' ]
 		);
 		$oDbw->insert(
 			'bs_dashboards_configs',
-			array(
+			[
 				'dc_type' => 'admin',
 				'dc_identifier' => '',
 				'dc_config' => $aPortletConfig,
 				'dc_timestamp' => '',
-			),
+			],
 			__METHOD__
 		);
 

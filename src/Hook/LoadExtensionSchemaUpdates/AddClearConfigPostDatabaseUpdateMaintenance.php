@@ -7,7 +7,6 @@ use BlueSpice\Hook\LoadExtensionSchemaUpdates;
 class AddClearConfigPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
-
 		$this->updater->addPostDatabaseUpdateMaintenance(
 			\BSDashBoardsClearConfigMaintenance::class
 		);
