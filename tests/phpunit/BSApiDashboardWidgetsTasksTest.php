@@ -13,7 +13,6 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group Database
  * @group medium
  */
-
 class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 
 	protected $tmpPageName = "Testpage";
@@ -34,7 +33,6 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 	 *
 	 */
 	public function testWikipage() {
-
 		$data = $this->executeTask(
 			'wikipage',
 			[

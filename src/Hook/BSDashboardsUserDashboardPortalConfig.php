@@ -29,8 +29,8 @@ abstract class BSDashboardsUserDashboardPortalConfig extends Hook {
 	 *
 	 * @param \BlueSpice\SpecialPage $caller
 	 * @param array &$portalConfig reference to array portlet configs
-	 * @param boolean $isDefault
-	 * @return boolean
+	 * @param bool $isDefault
+	 * @return bool
 	 */
 	public static function callback( $caller, &$portalConfig, $isDefault ) {
 		$className = static::class;
@@ -46,7 +46,7 @@ abstract class BSDashboardsUserDashboardPortalConfig extends Hook {
 	 * @param \Config $config
 	 * @param \BlueSpice\SpecialPage $caller
 	 * @param array &$portalConfig reference to array portlet configs
-	 * @param boolean $isDefault
+	 * @param bool $isDefault
 	 */
 	public function __construct( $context, $config, $caller, &$portalConfig, $isDefault ) {
 		parent::__construct( $context, $config );

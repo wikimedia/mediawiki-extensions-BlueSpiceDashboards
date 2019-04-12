@@ -16,8 +16,8 @@ abstract class BSDashboardsUserDashboardPortalPortlets extends Hook {
 	 * Fired in SpecialUserDashboard::execute
 	 * Fired in maintenance/clearConfigs.php
 	 *
-	 * @param array $portlets reference to array portlets
-	 * @return boolean
+	 * @param array &$portlets reference to array portlets
+	 * @return bool
 	 */
 	public static function callback( &$portlets ) {
 		$className = static::class;
@@ -31,7 +31,7 @@ abstract class BSDashboardsUserDashboardPortalPortlets extends Hook {
 	 *
 	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param array $portlets reference to array portlets
+	 * @param array &$portlets reference to array portlets
 	 */
 	public function __construct( $context, $config, &$portlets ) {
 		parent::__construct( $context, $config );
