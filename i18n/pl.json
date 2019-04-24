@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Railfail536"
 		]
 	},
 	"bs-specialadmindashboard-label": "Panel",
@@ -11,5 +12,5 @@
 	"bs-dashboard-userportlet-calendar-description": "Kalendarz",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Strona wiki",
 	"action-dashboards-viewspecialpage-userdashboard": "zobacz stronę specjalną „{{int:userdashboard}}”",
-	"right-dashboards-viewspecialpage-userdashboard": "Przyznawanie dostępu do strony specjalnej [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Dostęp do strony specjalnej [[Special:UserDashboard]]."
 }
