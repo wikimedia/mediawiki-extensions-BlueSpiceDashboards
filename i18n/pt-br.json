@@ -26,5 +26,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "Retorna conteúdo para alguns widgets do painel",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Retorna conteúdo para alguns widgets do painel",
 	"action-dashboards-viewspecialpage-userdashboard": "ver a página especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Concede acesso à página especial [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Acesso à página especial [[Special:UserDashboard]]."
 }
