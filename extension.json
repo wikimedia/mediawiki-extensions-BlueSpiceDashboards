@@ -76,6 +76,9 @@
 	"ExtensionMessagesFiles": {
 		"DashboardsAlias": "languages/Dashboards.alias.php"
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Dashboards\\": "src/"
+	},
 	"AutoloadClasses": {
 		"SpecialAdminDashboard": "includes/specials/SpecialAdminDashboard.php",
 		"SpecialUserDashboard": "includes/specials/SpecialUserDashboard.php",
