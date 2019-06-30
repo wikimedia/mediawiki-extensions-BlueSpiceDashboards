@@ -18,5 +18,6 @@
 	"userdashboard": "Gebruikersdashboard",
 	"bs-dashboard-userportlet-calendar-title": "Kalender",
 	"bs-dashboard-userportlet-calendar-description": "Kalender",
-	"action-dashboards-viewspecialpage-userdashboard": "bekijk de speciale pagina \"{{int:userdashboard}}\""
+	"action-dashboards-viewspecialpage-userdashboard": "bekijk de speciale pagina \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Toegang hebben tot de speciale pagina [[Special:UserDashboard]]"
 }
