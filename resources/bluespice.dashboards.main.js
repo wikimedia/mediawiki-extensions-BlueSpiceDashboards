@@ -1,17 +1,32 @@
-$(function(){
-	if ( mw.user.options.get( 'bs-dashboards-pref-userdashboardonlogo', false ) == true ) {
+( function( mw, $ ) {
+	var useDashboardLink = mw.user.options.get(
+		'bs-dashboards-pref-userdashboardonlogo',
+		false
+	);
+	if ( useDashboardLink === false ) {
+		return;
+	}
 
-		var $logoAnchor = $('#p-logo a').first(); //MediaWiki Skin
-		if( $logoAnchor.length == 0 ) {
-			$logoAnchor = $('#bs-logo a').first(); //Maybe BlueSpice Skin
+	var $logoAnchor, anchorSelectors = [
+		//MediaWiki Skin
+		'#p-logo a',
+		//Maybe BlueSpice Skin
+		'#bs-logo a',
+		//BlueSpiceCalumma
+		'nav.navbar.calumma-desktop-visible .bs-logo a',
+		//BlueSpiceCalumma mobile
+		'nav.navbar.calumma-mobile-visible .bs-logo a',
+		//Okay, now we're desperate
+		'a[title="' + mw.message( 'tooltip-p-logo' ).plain() + '"]'
+	];
+	for( var i = 0; i < anchorSelectors.length; i++ ) {
+		$logoAnchor = $( anchorSelectors[i] ).first();
+		if ( !$logoAnchor || $logoAnchor.length < 1 ) {
+			continue;
 		}
-		if( $logoAnchor.length == 0 ) { //Okay, now we're desperate
-			$logoAnchor = $('a[title="'+mw.message('tooltip-p-logo').plain()+'"]');
-		}
-
 		$logoAnchor.attr(
 			'href',
 			mw.util.getUrl( 'Special:UserDashboard' )
 		);
 	}
-});
+} )( mediaWiki, jQuery );
