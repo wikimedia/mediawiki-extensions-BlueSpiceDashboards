@@ -94,6 +94,9 @@
 			],
 			"messages": [
 				"tooltip-p-logo"
+			],
+			"dependencies": [
+				"user.options"
 			]
 		},
 		"ext.bluespice.dashboards.styles": {
