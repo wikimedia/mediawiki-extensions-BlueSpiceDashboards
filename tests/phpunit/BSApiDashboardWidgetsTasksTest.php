@@ -17,6 +17,7 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 
 	protected $tmpPageName = "Testpage";
 	protected $tmpPageContent = "Contentv4785zbn8c7w35zo";
+
 	/**
 	 * Anything that needs to happen before your tests should go here.
 	 */
