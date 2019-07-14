@@ -63,6 +63,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 	public function needsToken() {
 		return false;
 	}
+
 	/**
 	 * Returns an array of allowed parameters
 	 * @return array
