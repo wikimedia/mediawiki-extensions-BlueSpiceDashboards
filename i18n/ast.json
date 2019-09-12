@@ -25,5 +25,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "Devuelve'l conteníu de dalgunos widgets de tableru",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Devuelve'l conteníu de dalgunos widgets de tableru",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la páxina especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Permite l'accesu a la páxina especial [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Accesu a la páxina especial [[Special:UserDashboard]]."
 }

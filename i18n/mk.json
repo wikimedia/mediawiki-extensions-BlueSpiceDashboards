@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-dashboards-desc": "Става управувачница за нови корисници и администратори",
@@ -13,5 +14,8 @@
 	"admindashboard": "Администраторска управувачница",
 	"userdashboard": "Корисничка управувачница",
 	"bs-dashboard-userportlet-calendar-title": "Календар",
-	"bs-dashboard-userportlet-calendar-description": "Календар"
+	"bs-dashboard-userportlet-calendar-description": "Календар",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Викистраница",
+	"action-dashboards-viewspecialpage-userdashboard": "преглед на службената страница „{{int:userdashboard}}“",
+	"right-dashboards-viewspecialpage-userdashboard": "Пристап до службената страница [[Special:UserDashboard]]"
 }

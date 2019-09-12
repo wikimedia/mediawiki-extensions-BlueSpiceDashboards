@@ -7,7 +7,8 @@
 			"Kaganer",
 			"Facenapalm",
 			"Vlad5250",
-			"Romanko Mikhail"
+			"Romanko Mikhail",
+			"Movses"
 		]
 	},
 	"bs-dashboards-desc": "Предоставляет панель управления для пользователей и администраторов",
@@ -24,5 +25,5 @@
 	"bs-dashboard-userportlet-wikipage-description": "Используйте вики-страницу для определения виджета",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Вики-страница",
 	"action-dashboards-viewspecialpage-userdashboard": "просмотр служебной страницы «{{int:userdashboard}}»",
-	"right-dashboards-viewspecialpage-userdashboard": "доступ к служебной странице [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Доступ к служебной странице [[Special:UserDashboard]]."
 }

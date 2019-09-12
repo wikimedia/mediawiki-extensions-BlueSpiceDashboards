@@ -20,5 +20,5 @@
 	"bs-dashboard-userportlet-wikipage-description": "Använd en wikisida för att definiera widget",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikisida",
 	"action-dashboards-viewspecialpage-userdashboard": "visa specialsidan \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Ger åtkomst till specialsidan [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Åtkomst till specialsidan [[Special:UserDashboard]]."
 }
