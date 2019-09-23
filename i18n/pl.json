@@ -7,6 +7,9 @@
 		]
 	},
 	"bs-specialadmindashboard-label": "Panel",
+	"bs-dashboards-addportlet": "Dodaj portlet",
+	"bs-dashboards-portlets": "Portlety",
+	"prefs-dashboards": "Pulpity",
 	"admindashboard": "Panel administratora",
 	"userdashboard": "Panel użytkownika",
 	"bs-dashboard-userportlet-calendar-title": "Kalendarz",
