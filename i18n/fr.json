@@ -26,5 +26,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "Renvoie le contenu pour certains widgets du tableau de bord.",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Renvoie le contenu de certains widgets de tableau de bord",
 	"action-dashboards-viewspecialpage-userdashboard": "afficher la page spéciale \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Donne les droits d'accès à la page spéciale [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Accéder à la page spéciale [[Special:UserDashboard]]"
 }

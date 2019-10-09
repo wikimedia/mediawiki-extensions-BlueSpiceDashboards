@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-dashboards-desc": "يوفر لوحات معلومات للمستخدمين والإداريين",
@@ -10,7 +11,7 @@
 	"bs-dashboards-addportlet": "أضف portlet",
 	"bs-dashboards-portlets": "المداخل",
 	"prefs-dashboards": "لوحات البيانات",
-	"bs-dashboards-pref-userdashboardonlogo": "روابط شعار الموقع للوحة تحكم المستخدم",
+	"bs-dashboards-pref-userdashboardonlogo": "وصلات شعار الموقع للوحة تحكم المستخدم",
 	"admindashboard": "لوحة تحكم الإداري",
 	"userdashboard": "لوحة تحكم المستخدم",
 	"bs-dashboard-userportlet-calendar-title": "التقويم",
@@ -26,5 +27,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "إرجاع المحتوى لبعض أدوات لوحة المعلومات",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "إرجاع المحتوى لبعض أدوات لوحة المعلومات",
 	"action-dashboards-viewspecialpage-userdashboard": "عرض الصفحة الخاصة \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "يمنح الوصول إلى الصفحة الخاصة [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "الوصول إلى الصفحة الخاصة [[Special:UserDashboard]]"
 }

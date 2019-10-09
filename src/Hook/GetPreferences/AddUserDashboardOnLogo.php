@@ -9,7 +9,7 @@ class AddUserDashboardOnLogo extends GetPreferences {
 		$this->preferences['bs-dashboards-pref-userdashboardonlogo'] = [
 			'type' => 'toggle',
 			'label-message' => 'bs-dashboards-pref-userdashboardonlogo',
-			'section' => 'bluespice/dashboards',
+			'section' => 'rendering/dashboards',
 		];
 		return true;
 	}
