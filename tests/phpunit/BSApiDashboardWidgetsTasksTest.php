@@ -21,7 +21,7 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 	/**
 	 * Anything that needs to happen before your tests should go here.
 	 */
-	protected function setUp() {
+	protected function setUp() : void {
 		// Be sure to do call the parent setup and teardown functions.
 		// This makes sure that all the various cleanup and restorations
 		// happen as they should (including the restoration for setMwGlobals).
