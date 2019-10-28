@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"LaG roiL",
-			"Guycn2"
+			"Guycn2",
+			"Steeve815"
 		]
 	},
 	"bs-dashboards-desc": "אספקת לוחות בקרה עבור משתמשים ועבור מפעילי מערכת",
@@ -10,6 +11,7 @@
 	"bs-dashboards-addportlet": "הוספת מודול",
 	"bs-dashboards-portlets": "מודולים",
 	"prefs-dashboards": "לוחות בקרה",
+	"bs-dashboards-pref-userdashboardonlogo": "לקשר את לוגו האתר ללוח המשתמש",
 	"admindashboard": "לוח בקרה למפעיל מערכת",
 	"userdashboard": "לוח בקרה למשתמש",
 	"bs-dashboard-userportlet-calendar-title": "לוח שנה",
