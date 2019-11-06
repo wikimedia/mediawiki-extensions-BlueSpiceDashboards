@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"LaG roiL",
-			"Guycn2"
+			"Guycn2",
+			"Steeve815"
 		]
 	},
 	"bs-dashboards-desc": "אספקת לוחות בקרה עבור משתמשים ועבור מפעילי מערכת",
@@ -16,5 +17,6 @@
 	"bs-dashboard-userportlet-calendar-description": "לוח שנה",
 	"bs-dashboard-userportlet-wikipage-title": "דף ויקי",
 	"bs-dashboard-userportlet-wikipage-description": "שימוש בדף ויקי כדי להגדיר את הווידג'ט",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "דף ויקי"
+	"bs-dashboard-userportlet-wikipage-wiki-article": "דף ויקי",
+	"bs-dashboards-pref-userdashboardonlogo": "לקשר את לוגו האתר ללוח המשתמש"
 }
