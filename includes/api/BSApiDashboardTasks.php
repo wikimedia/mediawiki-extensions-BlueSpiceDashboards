@@ -1,17 +1,27 @@
 <?php
 
+use BlueSpice\Api\Response\Standard;
+
 class BSApiDashboardTasks extends BSApiTasksBase {
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aTasks = [
 		'saveAdminDashboardConfig' => [
 			'examples' => [
 				[
-					'portletConfig' => [ [ 'someKey' => 'someValue', 'otherKey' => 'otherValue' ] ]
+					'portletConfig' => [ [
+							'someKey' => 'someValue',
+							'otherKey' => 'otherValue'
+					] ]
 				]
 			],
 			'params' => [
 				'portletConfig' => [
-					'desc' => 'Array containing valid json encoded portlet configuration in form of { key: "value" }',
+					'desc' => 'Array containing valid json encoded portlet configuration '
+						. 'in form of { key: "value" }',
 					'type' => 'array',
 					'required' => true
 				]
@@ -21,12 +31,16 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		'saveUserDashboardConfig' => [
 			'examples' => [
 				[
-					'portletConfig' => [ [ 'someKey' => 'someValue', 'otherKey' => 'otherValue' ] ]
+					'portletConfig' => [ [
+						'someKey' => 'someValue',
+						'otherKey' => 'otherValue'
+					] ]
 				]
 			],
 			'params' => [
 				'portletConfig' => [
-					'desc' => 'Array containing valid json encoded portlet configuration in form of { key: "value" }',
+					'desc' => 'Array containing valid json encoded portlet configuration '
+						. 'in form of { key: "value" }',
 					'type' => 'array',
 					'required' => true
 				]
@@ -34,6 +48,10 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		]
 	];
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
 		return [
 			'saveAdminDashboardConfig' => [ 'wikiadmin' ],
@@ -41,6 +59,12 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		];
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_saveUserDashboardConfig( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
 
@@ -77,6 +101,12 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		return $oResponse;
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_saveAdminDashboardConfig( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
 

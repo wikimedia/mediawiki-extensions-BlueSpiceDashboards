@@ -9,6 +9,10 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 		$this->requireExtension( 'Dashboards' );
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function doDBUpdates() {
 		$aFinalPortletList = [];
 		$aPortlets = [];
@@ -31,12 +35,14 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 
 			try{
 				Wikimedia\suppressWarnings();
-				$aPortalConfig = unserialize( $row->dc_config ); // backward compatible handling
+				// backward compatible handling
+				$aPortalConfig = unserialize( $row->dc_config );
 				Wikimedia\restoreWarnings();
 			}catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}
-			if ( $aPortalConfig === false ) { // this should be the normal case
+			if ( $aPortalConfig === false ) {
+				// this should be the normal case
 				$aPortalConfig = FormatJson::decode( $row->dc_config );
 			} else {
 				$aPortalConfig = FormatJson::decode( $aPortalConfig );
@@ -60,7 +66,8 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 				$oDbw->update(
 					'bs_dashboards_configs',
 					[
-						'dc_config' => $aPortalConfig // save json string into db
+						// save json string into db
+						'dc_config' => $aPortalConfig
 					],
 					[
 						'dc_type' => $sType,
@@ -73,6 +80,10 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 		return true;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getUpdateKey() {
 		return 'bs_dashboards-clear-configs';
 	}
