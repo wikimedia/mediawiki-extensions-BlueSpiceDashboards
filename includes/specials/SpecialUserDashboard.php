@@ -1,13 +1,22 @@
 <?php
 
 class SpecialUserDashboard extends \BlueSpice\SpecialPage {
-	public function __construct( $name = '', $restriction = '', $listed = true, $function = false, $file = 'default', $includable = false ) {
+	/**
+	 *
+	 * @param string $name
+	 * @param string $restriction
+	 * @param bool $listed
+	 * @param mixed $function
+	 * @param string $file
+	 * @param bool $includable
+	 */
+	public function __construct( $name = '', $restriction = '', $listed = true, $function = false,
+		$file = 'default', $includable = false ) {
 		parent::__construct( 'UserDashboard', 'dashboards-viewspecialpage-userdashboard' );
 	}
 
 	/**
 	 *
-	 * @global OutputPage $wgOut
 	 * @param string $sParameter
 	 */
 	public function execute( $sParameter ) {
@@ -34,7 +43,11 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 				[]
 			];
 
-			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', [ $this, &$aPortalConfig, $bIsDefault ] );
+			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', [
+				$this,
+				&$aPortalConfig,
+				$bIsDefault
+			] );
 		}
 
 		$sSaveBackend = 'saveUserDashboardConfig';
@@ -53,8 +66,9 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 	private function checkForReadOnly() {
 		if ( wfReadOnly() ) {
 			global $wgReadOnly;
+			$msg = $this->msg( 'bs-readonly', $wgReadOnly );
 			$this->getOutput()->addHTML(
-				'<script>var wgReadOnly = true; alert("' . wfMessage( 'bs-readonly', $wgReadOnly )->escaped() . '");</script>'
+				'<script>var wgReadOnly = true; alert("' . $msg->escaped() . '");</script>'
 			);
 
 			return true;

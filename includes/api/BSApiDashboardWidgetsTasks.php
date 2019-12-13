@@ -1,7 +1,13 @@
 <?php
 
+use BlueSpice\Api\Response\Standard;
+
 class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aTasks = [
 		'wikipage' => [
 			'examples' => [
@@ -19,12 +25,22 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 		]
 	];
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
 		return [
 			'wikipage' => [ 'read' ]
 		];
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_wikipage( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
 
@@ -60,6 +76,10 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 		return $oResponse;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function needsToken() {
 		return false;
 	}
@@ -78,7 +98,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 					ApiBase::PARAM_TYPE => 'string',
 					ApiBase::PARAM_REQUIRED => false,
 					// TODO: Description
-					10 /*ApiBase::PARAM_HELP_MSG*/ => 'apihelp-bs-dashboard-task-param-dc',
+					ApiBase::PARAM_HELP_MSG => 'apihelp-bs-dashboard-task-param-dc',
 				]
 			]
 		);

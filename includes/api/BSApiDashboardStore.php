@@ -2,6 +2,11 @@
 
 class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$aPortlets = [];
 
@@ -48,6 +53,11 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 		return $aReturnObjects;
 	}
 
+	/**
+	 *
+	 * @param array $aDataSet
+	 * @return bool
+	 */
 	public function filterCallback( $aDataSet ) {
 		$aFilter = $this->getParameter( 'filter' );
 
@@ -63,9 +73,16 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 		return parent::filterCallback( $aDataSet );
 	}
 
+	/**
+	 *
+	 * @param \stdClass $oFilter
+	 * @param array $aDataSet
+	 * @return bool
+	 */
 	public function filterGroup( $oFilter, $aDataSet ) {
 		if ( !is_string( $oFilter->value ) ) {
-			return true; // TODO: Warning
+			// TODO: Warning
+			return true;
 		}
 		$sFieldValue = $aDataSet->groups;
 		$sFilterValue = $oFilter->value;
