@@ -30,8 +30,9 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 		$this->insertPage( $this->tmpPageName, $this->tmpPageContent );
 	}
 
-	/*
-	 *
+	/**
+	 * @covers \BSApiDashboardWidgetsTasks::task_wikipage
+	 * @return array
 	 */
 	public function testWikipage() {
 		$data = $this->executeTask(
@@ -47,6 +48,10 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 		return $data;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-dashboards-widgets-tasks';
 	}

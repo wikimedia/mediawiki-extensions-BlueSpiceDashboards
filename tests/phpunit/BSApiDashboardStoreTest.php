@@ -30,6 +30,10 @@ class BSApiDashboardStoreTest extends ApiTestCase {
 		parent::tearDown();
 	}
 
+	/**
+	 * @covers \BSApiDashboardStore::execute
+	 * @return array
+	 */
 	public function testMakeData() {
 		$data = $this->doApiRequest( [
 			'action' => 'bs-dashboards-store'
