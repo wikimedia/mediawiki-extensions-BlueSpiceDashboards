@@ -4,7 +4,8 @@
 			"Valepert",
 			"Beta16",
 			"Matteocng",
-			"Einreiher"
+			"Einreiher",
+			"Dansita"
 		]
 	},
 	"bs-dashboards-desc": "Fornisce cruscotti per utenti e amministratori",
@@ -14,6 +15,7 @@
 	"userdashboard": "Cruscotto utente",
 	"bs-dashboard-userportlet-calendar-title": "Calendario",
 	"bs-dashboard-userportlet-calendar-description": "Calendario",
+	"bs-dashboard-userportlet-wikipage-title": "Pagina wiki",
 	"bs-dashboard-userportlet-wikipage-description": "Utilizza una pagina wiki per definire il widget",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Pagina wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parametro di controllo della cache. Usato da ExtJS.",
