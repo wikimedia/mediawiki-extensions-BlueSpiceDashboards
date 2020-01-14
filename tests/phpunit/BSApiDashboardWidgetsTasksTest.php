@@ -42,7 +42,7 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 			]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 		$this->assertContains( $this->tmpPageContent, $data->payload["html"] );
 
 		return $data;

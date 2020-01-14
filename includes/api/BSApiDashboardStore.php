@@ -16,7 +16,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 			if ( !isset( $aPortlets[$i]['group'] ) ) {
 				$aPortlets[$i]['groups'] = [ 'UserDashboard' ];
 			}
-		};
+		}
 
 		$aReturnArray = $aPortlets;
 
@@ -28,7 +28,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
 				$aPortlets[$i]['groups'] = [ 'AdminDashboard' ];
 			}
-		};
+		}
 
 		$aReturnArray = array_merge( $aReturnArray, $aPortlets );
 
@@ -40,7 +40,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
 				$aPortlets[$i]['groups'] = [ 'UserDashboard', 'AdminDashboard' ];
 			}
-		};
+		}
 
 		$aReturnArray = array_merge( $aReturnArray, $aPortlets );
 

@@ -44,7 +44,7 @@ class BSApiDashboardTasksTest extends BSApiTasksTestBase {
 			]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
@@ -61,7 +61,7 @@ class BSApiDashboardTasksTest extends BSApiTasksTestBase {
 			]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
