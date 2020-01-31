@@ -18,7 +18,7 @@
 	"bs-dashboard-userportlet-calendar-description": "Takvim",
 	"bs-dashboard-userportlet-wikipage-title": "WikiSayfa",
 	"bs-dashboard-userportlet-wikipage-description": "Widget'ı tanımlamak için bir wiki sayfası kullanın",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "Wiki sayfa",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Viki sayfa",
 	"apihelp-bs-dashboard-task-param-dc": "Önbellek kontrol parametresi. ExtJS tarafından kullanılır.",
 	"apihelp-bs-dashboards-store-description": "Mevcut tüm portletleri listeler",
 	"apihelp-bs-dashboards-store-summary": "Mevcut tüm portletleri listeler",
