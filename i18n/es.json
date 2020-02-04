@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Fitoschido",
-			"Carlosmg.dg"
+			"Carlosmg.dg",
+			"DannyS712"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneles para usuarios y administradores",
@@ -20,7 +21,7 @@
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Página wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parámetro de control de caché. Usado por ExtJS.",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la página especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Otorga acceso a la página especial [[Special:UserDashboard]].",
+	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]",
 	"apihelp-bs-dashboards-tasks-description": "Guarda la configuración del tablero",
 	"apihelp-bs-dashboards-tasks-summary": "Guarda la configuración del tablero"
 }
