@@ -4,7 +4,8 @@
 			"Valepert",
 			"Beta16",
 			"Matteocng",
-			"Einreiher"
+			"Einreiher",
+			"Dansita"
 		]
 	},
 	"bs-dashboards-desc": "Fornisce cruscotti per utenti e amministratori",
@@ -20,5 +21,6 @@
 	"apihelp-bs-dashboards-store-description": "Elenca tutti i moduli web disponibili.",
 	"apihelp-bs-dashboards-store-summary": "Elenca tutti i moduli web disponibili.",
 	"action-dashboards-viewspecialpage-userdashboard": "visualizzare la pagina speciale \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Accede alla pagina speciale [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Accede alla pagina speciale [[Special:UserDashboard]]",
+	"bs-dashboard-userportlet-wikipage-title": "Pagina wiki"
 }
