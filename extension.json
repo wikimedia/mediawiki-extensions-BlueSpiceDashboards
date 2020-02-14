@@ -96,7 +96,7 @@
 				"tooltip-p-logo"
 			],
 			"dependencies": [
-				"user.options"
+				"mediawiki.util"
 			]
 		},
 		"ext.bluespice.dashboards.styles": {
