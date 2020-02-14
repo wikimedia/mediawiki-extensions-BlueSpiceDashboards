@@ -21,6 +21,7 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 	 */
 	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
+
 		$this->checkForReadOnly();
 
 		$oDbr = wfGetDB( DB_REPLICA );
@@ -58,6 +59,7 @@ class SpecialUserDashboard extends \BlueSpice\SpecialPage {
 
 		$this->getOutput()->addModuleStyles( 'ext.bluespice.extjs.BS.portal.css' );
 		$this->getOutput()->addModules( 'ext.bluespice.dashboards.userDashboard' );
+		$this->getOutput()->addModuleStyles( 'ext.bluespice.dashboards.styles' );
 		$this->getOutput()->addHTML(
 			Html::element( 'div', [ 'id' => 'bs-dashboards-userdashboard' ] )
 		);

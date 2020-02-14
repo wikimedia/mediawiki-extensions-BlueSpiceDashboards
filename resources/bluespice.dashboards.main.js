@@ -1,12 +1,4 @@
 ( function( mw, $ ) {
-	var useDashboardLink = mw.user.options.get(
-		'bs-dashboards-pref-userdashboardonlogo',
-		false
-	);
-	if ( useDashboardLink === false ) {
-		return;
-	}
-
 	var $logoAnchor, anchorSelectors = [
 		//MediaWiki Skin
 		'#p-logo a',
