@@ -26,7 +26,6 @@ class BSApiDashboardWidgetsTasksTest extends BSApiTasksTestBase {
 		// This makes sure that all the various cleanup and restorations
 		// happen as they should (including the restoration for setMwGlobals).
 		parent::setUp();
-		$this->doLogin();
 		$this->insertPage( $this->tmpPageName, $this->tmpPageContent );
 	}
 
