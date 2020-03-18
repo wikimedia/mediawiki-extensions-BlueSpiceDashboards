@@ -57,7 +57,10 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		if ( !$oTitle->userCan( 'read' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'read', $this->getUser(), $oTitle )
+		) {
 			$oResponse->success = false;
 			$oResponse->payload = [ "html" => wfMessage( 'bs-permissionerror' )->plain() ];
 			return $oResponse;
