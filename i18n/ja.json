@@ -3,7 +3,8 @@
 		"authors": [
 			"Shirayuki",
 			"Otokoume",
-			"Suyama"
+			"Suyama",
+			"Aefgh39622"
 		]
 	},
 	"bs-dashboards-desc": "利用者向けおよび管理者向けのダッシュボードを提供する",
@@ -18,6 +19,7 @@
 	"bs-dashboard-userportlet-calendar-description": "カレンダー",
 	"bs-dashboard-userportlet-wikipage-title": "ウィキページ",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "ウィキページ",
+	"apihelp-bs-dashboard-task-param-dc": "キャッシュ制御パラメーター。ExtJS によって使用されます。",
 	"action-dashboards-viewspecialpage-userdashboard": "特別ページ「{{int:userdashboard}}」の閲覧",
 	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] を利用"
 }
