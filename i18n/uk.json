@@ -28,5 +28,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "Видає контент для деяких віджетів панелі",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Видає контент для деяких віджетів панелі",
 	"action-dashboards-viewspecialpage-userdashboard": "перегляд спеціальної сторінки «{{int:userdashboard}}»",
-	"right-dashboards-viewspecialpage-userdashboard": "доступ до спеціальної сторінки [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Доступ до спеціальної сторінки [[Special:UserDashboard]]"
 }
