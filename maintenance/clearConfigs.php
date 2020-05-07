@@ -6,7 +6,7 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->requireExtension( 'BlueSpiceFoundation' );
-		$this->requireExtension( 'Dashboards' );
+		$this->requireExtension( 'BlueSpiceDashboards' );
 	}
 
 	/**
