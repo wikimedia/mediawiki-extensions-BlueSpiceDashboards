@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shuba",
-			"HarpyWar",
-			"Meshkov.a",
-			"Kaganer",
 			"Facenapalm",
-			"Vlad5250",
+			"HarpyWar",
+			"Kaganer",
+			"Meshkov.a",
+			"Movses",
 			"Romanko Mikhail",
-			"Movses"
+			"Shuba",
+			"Vlad5250"
 		]
 	},
 	"bs-dashboards-desc": "Предоставляет панель управления для пользователей и администраторов",
