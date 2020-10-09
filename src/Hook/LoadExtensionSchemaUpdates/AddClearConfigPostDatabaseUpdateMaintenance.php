@@ -14,6 +14,10 @@ class AddClearConfigPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpd
 		$this->updater->addPostDatabaseUpdateMaintenance(
 			\BsDashboardsUpdateRSSUrl::class
 		);
+
+		$this->updater->addPostDatabaseUpdateMaintenance(
+			\BSDashboardsConvertToTwoColumns::class
+		);
 	}
 
 }

@@ -1,82 +1,45 @@
 <?php
 
-class SpecialUserDashboard extends \BlueSpice\SpecialPage {
-	/**
-	 *
-	 * @param string $name
-	 * @param string $restriction
-	 * @param bool $listed
-	 * @param mixed $function
-	 * @param string $file
-	 * @param bool $includable
-	 */
-	public function __construct( $name = '', $restriction = '', $listed = true, $function = false,
-		$file = 'default', $includable = false ) {
+class SpecialUserDashboard extends SpecialDashboard {
+
+	public function __construct() {
 		parent::__construct( 'UserDashboard', 'dashboards-viewspecialpage-userdashboard' );
 	}
 
 	/**
-	 *
-	 * @param string $sParameter
+	 * @inheritDoc
 	 */
-	public function execute( $sParameter ) {
-		parent::execute( $sParameter );
-
-		$this->checkForReadOnly();
-
-		$oDbr = wfGetDB( DB_REPLICA );
-		$res = $oDbr->select(
-				'bs_dashboards_configs',
-				'*',
-				[ 'dc_identifier' => $this->getUser()->getId() ],
-				__METHOD__
-		);
-
-		if ( $oDbr->numRows( $res ) > 0 ) {
-			$row = $oDbr->fetchObject( $res );
-			$aPortalConfig = $row->dc_config;
-			$aPortalConfig = FormatJson::decode( $aPortalConfig );
-		} else {
-			$bIsDefault = true;
-			$aPortalConfig = [
-				[],
-				[],
-				[]
-			];
-
-			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', [
-				$this,
-				&$aPortalConfig,
-				$bIsDefault
-			] );
-		}
-
-		$sSaveBackend = 'saveUserDashboardConfig';
-		$sLocation = 'UserDashboard';
-		$this->getOutput()->addJsConfigVars( 'bsPortalConfigSavebackend', $sSaveBackend );
-		$this->getOutput()->addJsConfigVars( 'bsPortalConfigLocation', $sLocation );
-		$this->getOutput()->addJsConfigVars( 'bsPortalConfig', $aPortalConfig );
-
-		$this->getOutput()->addModuleStyles( 'ext.bluespice.extjs.BS.portal.css' );
-		$this->getOutput()->addModules( 'ext.bluespice.dashboards.userDashboard' );
-		$this->getOutput()->addModuleStyles( 'ext.bluespice.dashboards.styles' );
-		$this->getOutput()->addHTML(
-			Html::element( 'div', [ 'id' => 'bs-dashboards-userdashboard' ] )
-		);
+	protected function getConds(): array {
+		return [ 'dc_identifier' => $this->getUser()->getId() ];
 	}
 
-	private function checkForReadOnly() {
-		if ( wfReadOnly() ) {
-			global $wgReadOnly;
-			$msg = $this->msg( 'bs-readonly', $wgReadOnly );
-			$this->getOutput()->addHTML(
-				'<script>var wgReadOnly = true; alert("' . $msg->escaped() . '");</script>'
-			);
-
-			return true;
-		}
-
-		return false;
+	/**
+	 * @inheritDoc
+	 */
+	protected function getSaveBackend(): string {
+		return 'saveUserDashboardConfig';
 	}
 
+	/**
+	 * @inheritDoc
+	 */
+	protected function getLocation(): string {
+		return 'UserDashboard';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getContainerId(): string {
+		return 'bs-dashboards-userdashboard';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function addModules( OutputPage $out ) {
+		$out->addModuleStyles( 'ext.bluespice.extjs.BS.portal.css' );
+		$out->addModules( 'ext.bluespice.dashboards.userDashboard' );
+		$out->addModuleStyles( 'ext.bluespice.dashboards.styles' );
+	}
 }
