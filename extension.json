@@ -80,13 +80,15 @@
 		"BlueSpice\\Dashboards\\": "src/"
 	},
 	"AutoloadClasses": {
+		"SpecialDashboard": "includes/specials/SpecialDashboard.php",
 		"SpecialAdminDashboard": "includes/specials/SpecialAdminDashboard.php",
 		"SpecialUserDashboard": "includes/specials/SpecialUserDashboard.php",
 		"BSApiDashboardTasks": "includes/api/BSApiDashboardTasks.php",
 		"BSApiDashboardStore": "includes/api/BSApiDashboardStore.php",
 		"BSApiDashboardWidgetsTasks": "includes/api/BSApiDashboardWidgetsTasks.php",
 		"BSDashBoardsClearConfigMaintenance": "maintenance/clearConfigs.php",
-		"BsDashboardsUpdateRSSUrl": "maintenance/updateRSSUrl.php"
+		"BsDashboardsUpdateRSSUrl": "maintenance/updateRSSUrl.php",
+		"BSDashboardsConvertToTwoColumns": "maintenance/convertToTwoColumns.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.dashboards": {

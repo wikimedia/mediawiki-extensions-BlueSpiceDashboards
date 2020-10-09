@@ -10,11 +10,11 @@ Ext.define('BS.Dashboards.DashboardPanel', {
 
 	initComponent: function() {
 		this.items = [];
-
+		// Max. 2 columns
+		this.portalConfig = this.portalConfig.slice( 0, 2 );
 		for ( var i = 0; i < this.portalConfig.length; i++ ) {
 			var columnConfig = this.portalConfig[i];
 			var portlets = [];
-
 			for ( var j = 0; j < columnConfig.length; j++ ) {
 				try {
 					var portletConfig = columnConfig[j];
