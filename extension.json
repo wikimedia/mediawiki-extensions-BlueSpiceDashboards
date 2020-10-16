@@ -88,7 +88,8 @@
 		"BSApiDashboardWidgetsTasks": "includes/api/BSApiDashboardWidgetsTasks.php",
 		"BSDashBoardsClearConfigMaintenance": "maintenance/clearConfigs.php",
 		"BsDashboardsUpdateRSSUrl": "maintenance/updateRSSUrl.php",
-		"BSDashboardsConvertToTwoColumns": "maintenance/convertToTwoColumns.php"
+		"BSDashboardsConvertToTwoColumns": "maintenance/convertToTwoColumns.php",
+		"BSDashboardsConvertToDynamicModules": "maintenance/convertToDynamicModules.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.dashboards": {
@@ -154,7 +155,7 @@
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalPortlets\\AddPortlets::callback",
 		"LoadExtensionSchemaUpdates":  [
 			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddDashboardConfigsTable::callback",
-			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddClearConfigPostDatabaseUpdateMaintenance::callback"
+			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddPostDatabaseUpdateMaintenance::callback"
 		]
 	},
 	"load_composer_autoloader": true,

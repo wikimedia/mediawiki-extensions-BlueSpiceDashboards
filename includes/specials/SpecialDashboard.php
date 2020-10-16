@@ -11,14 +11,14 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 
 		$this->checkForReadOnly();
 
-		$portalConfig = $this->getPortalConfig();
+		$this->getPortalConfig();
 		$this->getOutput()->addJsConfigVars(
 			'bsPortalConfigSavebackend', $this->getSaveBackend()
 		);
 		$this->getOutput()->addJsConfigVars(
 			'bsPortalConfigLocation', $this->getLocation()
 		);
-		$this->getOutput()->addJsConfigVars( 'bsPortalConfig', $portalConfig );
+
 		$this->addModules( $this->getOutput() );
 		$this->getOutput()->addHTML(
 			Html::element( 'div', [ 'id' => $this->getContainerId() ] )
@@ -26,7 +26,6 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 * @return array
 	 * @throws Exception
 	 */
 	protected function getPortalConfig() {
@@ -40,8 +39,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			$row = $oDbr->fetchObject( $res );
-			$aPortalConfig = $row->dc_config;
-			$aPortalConfig = FormatJson::decode( $aPortalConfig );
+			$aPortalConfig = FormatJson::decode( $row->dc_config, 1 );
 		} else {
 			$bIsDefault = true;
 			$aPortalConfig = [
@@ -56,7 +54,13 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 			] );
 		}
 
-		return $this->balance( $aPortalConfig );
+		$this->getOutput()->addJsConfigVars(
+			'bsPortalDependencies', $this->extractModules( $aPortalConfig )
+		);
+		$this->getOutput()->addJsConfigVars(
+			'bsPortalConfig',
+			$this->balance( $aPortalConfig )
+		);
 	}
 
 	/**
@@ -127,6 +131,29 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	 */
 	protected function addModules( OutputPage $out ) {
 		// STUB
+	}
+
+	/**
+	 * Add modules from portlets
+	 *
+	 * @param array $portalConfig
+	 * @return array
+	 */
+	protected function extractModules( array $portalConfig ) {
+		$all = array_merge( $portalConfig[0], $portalConfig[1] );
+		$modules = [];
+		foreach ( $all as $portlet ) {
+			if ( !isset( $portlet['modules'] ) ) {
+				continue;
+			}
+			$portletModules = $portlet['modules'];
+			if ( !is_array( $portletModules ) ) {
+				$portletModules = [ $portletModules ];
+			}
+			$modules = array_merge( $modules, $portletModules );
+		}
+
+		return array_unique( $modules );
 	}
 
 }

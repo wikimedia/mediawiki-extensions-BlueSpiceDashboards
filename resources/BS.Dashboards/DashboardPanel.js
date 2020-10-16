@@ -20,7 +20,9 @@ Ext.define('BS.Dashboards.DashboardPanel', {
 					var portletConfig = columnConfig[j];
 					var portlet = Ext.create(
 						portletConfig.type,
-						portletConfig.config
+						Ext.apply( {}, portletConfig.config, {
+							modules: portletConfig.modules
+						} )
 					);
 				} catch ( e ) {
 					//Workaround: Portlets of deactivated extensions are still
@@ -88,7 +90,8 @@ Ext.define('BS.Dashboards.DashboardPanel', {
 				var className = Ext.getClassName( portlet );
 				var cfg = {
 					type: className,
-					config: portlet.getPortletConfig()
+					config: portlet.getPortletConfig(),
+					modules: portlet.getPortletModules()
 				};
 				columnConfig.push( cfg );
 			}

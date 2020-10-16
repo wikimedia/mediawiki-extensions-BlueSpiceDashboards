@@ -74,8 +74,7 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		}
 
 		$aPortletConfig = $oTaskData->portletConfig[0];
-
-		json_decode( $aPortletConfig );
+		$modules = $oTaskData->modules ?? [];
 		if ( json_last_error() !== JSON_ERROR_NONE ) {
 			$oResponse->message = wfMessage( 'api-error-missingparam' )->plain();
 			return $oResponse;
@@ -111,7 +110,6 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 		$oResponse = $this->makeStandardReturn();
 
 		$aPortletConfig = $oTaskData->portletConfig[0];
-
 		json_decode( $aPortletConfig );
 		if ( json_last_error() !== JSON_ERROR_NONE ) {
 			$oResponse->message = wfMessage( 'api-error-missingparam' )->plain();

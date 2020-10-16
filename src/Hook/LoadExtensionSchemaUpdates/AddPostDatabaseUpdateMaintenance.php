@@ -4,7 +4,7 @@ namespace BlueSpice\Dashboards\Hook\LoadExtensionSchemaUpdates;
 
 use BlueSpice\Hook\LoadExtensionSchemaUpdates;
 
-class AddClearConfigPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpdates {
+class AddPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
 		$this->updater->addPostDatabaseUpdateMaintenance(
@@ -17,6 +17,10 @@ class AddClearConfigPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpd
 
 		$this->updater->addPostDatabaseUpdateMaintenance(
 			\BSDashboardsConvertToTwoColumns::class
+		);
+
+		$this->updater->addPostDatabaseUpdateMaintenance(
+			\BSDashboardsConvertToDynamicModules::class
 		);
 	}
 
