@@ -52,6 +52,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 				&$aPortalConfig,
 				$bIsDefault
 			] );
+
 		}
 
 		$this->getOutput()->addJsConfigVars(
@@ -59,7 +60,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 		);
 		$this->getOutput()->addJsConfigVars(
 			'bsPortalConfig',
-			$this->balance( $aPortalConfig )
+			$aPortalConfig
 		);
 	}
 
@@ -88,10 +89,15 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	}
 
 	/**
+	 * Not used currently - please dont delete
+	 *
 	 * @param array $config
 	 * @return array
 	 */
 	private function balance( array $config ) {
+		if ( count( $config ) !== 2 ) {
+			return $config;
+		}
 		if ( abs( count( $config[0] ) - count( $config[1] ) ) < 3 ) {
 			return $config;
 		}
