@@ -18,10 +18,6 @@ class AddPostDatabaseUpdateMaintenance extends LoadExtensionSchemaUpdates {
 		$this->updater->addPostDatabaseUpdateMaintenance(
 			\BSDashboardsConvertToTwoColumns::class
 		);
-
-		$this->updater->addPostDatabaseUpdateMaintenance(
-			\BSDashboardsConvertToDynamicModules::class
-		);
 	}
 
 }

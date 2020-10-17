@@ -88,8 +88,7 @@
 		"BSApiDashboardWidgetsTasks": "includes/api/BSApiDashboardWidgetsTasks.php",
 		"BSDashBoardsClearConfigMaintenance": "maintenance/clearConfigs.php",
 		"BsDashboardsUpdateRSSUrl": "maintenance/updateRSSUrl.php",
-		"BSDashboardsConvertToTwoColumns": "maintenance/convertToTwoColumns.php",
-		"BSDashboardsConvertToDynamicModules": "maintenance/convertToDynamicModules.php"
+		"BSDashboardsConvertToTwoColumns": "maintenance/convertToTwoColumns.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.dashboards": {
