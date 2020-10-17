@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 
 	/**
@@ -37,30 +39,36 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 			__METHOD__
 		);
 
+		$dbConfig = null;
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			$row = $oDbr->fetchObject( $res );
-			$aPortalConfig = FormatJson::decode( $row->dc_config, 1 );
-		} else {
-			$bIsDefault = true;
-			$aPortalConfig = [
-				[],
-				[],
-			];
+			$dbConfig = FormatJson::decode( $row->dc_config, 1 );
+		}
 
-			Hooks::run( 'BSDashboardsUserDashboardPortalConfig', [
-				$this,
-				&$aPortalConfig,
-				$bIsDefault
-			] );
+		$isDefault = true;
+		$portalConfig = [
+			[],
+			[],
+		];
 
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'BSDashboardsUserDashboardPortalConfig', [
+			$this,
+			&$portalConfig,
+			$isDefault
+		] );
+
+		$outputConfig = $this->balance( $portalConfig );
+		if ( $dbConfig !== null ) {
+			$outputConfig = $dbConfig;
 		}
 
 		$this->getOutput()->addJsConfigVars(
-			'bsPortalDependencies', $this->extractModules( $aPortalConfig )
+			'bsPortalDependencies', $this->extractModules( $dbConfig, $portalConfig )
 		);
 		$this->getOutput()->addJsConfigVars(
 			'bsPortalConfig',
-			$aPortalConfig
+			$outputConfig
 		);
 	}
 
@@ -142,24 +150,66 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	/**
 	 * Add modules from portlets
 	 *
+	 * @param array|null $dbConfig
 	 * @param array $portalConfig
 	 * @return array
 	 */
-	protected function extractModules( array $portalConfig ) {
-		$all = array_merge( $portalConfig[0], $portalConfig[1] );
+	protected function extractModules( ?array $dbConfig, array $portalConfig ) {
+		$modules = $this->getModulesFromConfig( $portalConfig );
+
+		if ( $dbConfig !== null ) {
+			$allModules = [];
+			$dbPortlets = array_merge( ...$dbConfig );
+			foreach ( $dbPortlets as $portlet ) {
+				if ( isset( $portlet['type'] ) && isset( $modules[$portlet['type']] ) ) {
+					$allModules = array_merge( $allModules, $modules[$portlet['type']] );
+				}
+			}
+			return array_unique( $allModules );
+		} else {
+			$modules = array_values( $modules );
+			return array_unique( array_merge( ...$modules ) );
+		}
+	}
+
+	/**
+	 * Get all required RL modules from portal config retrieved by hook
+	 *
+	 * @param array $portalConfig
+	 * @return array
+	 */
+	protected function getModulesFromConfig( $portalConfig ) {
+		$all = array_merge( ...$portalConfig );
 		$modules = [];
 		foreach ( $all as $portlet ) {
-			if ( !isset( $portlet['modules'] ) ) {
+			if ( !isset( $portlet['modules'] ) || !isset( $portlet['type'] ) ) {
 				continue;
 			}
 			$portletModules = $portlet['modules'];
 			if ( !is_array( $portletModules ) ) {
 				$portletModules = [ $portletModules ];
 			}
-			$modules = array_merge( $modules, $portletModules );
+			$modules[$portlet['type']] = $portletModules;
 		}
 
-		return array_unique( $modules );
+		return $modules;
+	}
+
+	/**
+	 * @param string $portletType
+	 * @param array $defaults
+	 * @return array|null
+	 */
+	protected function getPortletForType( $portletType, array $defaults ) {
+		foreach ( $defaults as $col ) {
+			foreach ( $col as $default ) {
+				if ( $default['type'] === $portletType ) {
+					return $default;
+				}
+			}
+		}
+
+		return null;
 	}
 
 }

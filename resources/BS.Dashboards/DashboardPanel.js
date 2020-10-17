@@ -90,8 +90,7 @@ Ext.define('BS.Dashboards.DashboardPanel', {
 				var className = Ext.getClassName( portlet );
 				var cfg = {
 					type: className,
-					config: portlet.getPortletConfig(),
-					modules: portlet.getPortletModules()
+					config: portlet.getPortletConfig()
 				};
 				columnConfig.push( cfg );
 			}
