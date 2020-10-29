@@ -7,5 +7,7 @@
 	"bs-dashboard-userportlet-calendar-title": "Kalender",
 	"bs-dashboard-userportlet-calendar-description": "Kalender",
 	"bs-dashboard-userportlet-wikipage-title": "Wikiside",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikiside"
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikiside",
+	"bs-specialadmindashboard-label": "Kontrolpanel",
+	"prefs-dashboards": "Kontrolpaneler"
 }
