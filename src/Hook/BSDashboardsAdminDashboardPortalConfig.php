@@ -8,7 +8,7 @@ abstract class BSDashboardsAdminDashboardPortalConfig extends Hook {
 
 	/**
 	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	protected $isDefault;
 
@@ -20,7 +20,7 @@ abstract class BSDashboardsAdminDashboardPortalConfig extends Hook {
 
 	/**
 	 *
-	 * @var \BlueSpice\SpecialPage $caller
+	 * @var \BlueSpice\SpecialPage
 	 */
 	protected $caller;
 
