@@ -2,6 +2,8 @@
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
+use MediaWiki\MediaWikiServices;
+
 class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	public function __construct() {
 		parent::__construct();
@@ -17,9 +19,21 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 		$aFinalPortletList = [];
 		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', [ &$aPortlets ] );
-		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', [ &$aPortlets ] );
-		Hooks::run( 'BSDashboardsGetPortlets', [ &$aPortlets ] );
+		$this->getServices()->getHookContainer()->run(
+			'BSDashboardsUserDashboardPortalPortlets',
+			[
+				&$aPortlets
+			]
+		);
+		$this->getServices()->getHookContainer()->run(
+			'BSDashboardsAdminDashboardPortalPortlets',
+			[
+				&$aPortlets
+			]
+		);
+		$this->getServices()->getHookContainer()->run( 'BSDashboardsGetPortlets', [
+			&$aPortlets
+		] );
 		$this->output( 'Clearing dashboards... ' );
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			$aFinalPortletList[] = $aPortlets[$i]["type"];
@@ -78,6 +92,14 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 		}
 
 		return true;
+	}
+
+	/**
+	 *
+	 * @return MediaWikiServices
+	 */
+	protected function getServices() {
+		return MediaWiki\MediaWikiServices::getInstance();
 	}
 
 	/**
