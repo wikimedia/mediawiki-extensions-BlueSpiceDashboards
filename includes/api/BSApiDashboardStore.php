@@ -10,7 +10,12 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 	protected function makeData( $sQuery = '' ) {
 		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsUserDashboardPortalPortlets', [ &$aPortlets ] );
+		$this->getServices()->getHookContainer()->run(
+			'BSDashboardsUserDashboardPortalPortlets',
+			[
+				&$aPortlets
+			]
+		);
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['group'] ) ) {
@@ -22,7 +27,12 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
 		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsAdminDashboardPortalPortlets', [ &$aPortlets ] );
+		$this->getServices()->getHookContainer()->run(
+			'BSDashboardsAdminDashboardPortalPortlets',
+			[
+				&$aPortlets
+			]
+		);
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
@@ -34,7 +44,9 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
 		$aPortlets = [];
 
-		Hooks::run( 'BSDashboardsGetPortlets', [ &$aPortlets ] );
+		$this->getServices()->getHookContainer()->run( 'BSDashboardsGetPortlets', [
+			&$aPortlets
+		] );
 
 		for ( $i = 0; $i < count( $aPortlets ); $i++ ) {
 			if ( !isset( $aPortlets[$i]['groups'] ) ) {
