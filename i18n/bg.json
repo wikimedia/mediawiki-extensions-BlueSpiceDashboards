@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"StanProg"
 		]
 	},
-	"bs-dashboard-userportlet-calendar-title": "Блог",
-	"bs-dashboard-userportlet-calendar-description": "Блог"
+	"bs-dashboard-userportlet-calendar-title": "Календар",
+	"bs-dashboard-userportlet-calendar-description": "Календар"
 }
