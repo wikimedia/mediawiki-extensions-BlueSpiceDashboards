@@ -26,7 +26,7 @@ class BSApiDashboardStoreTest extends ApiTestCase {
 		$this->assertArrayHasKey( 'results', $data[0] );
 
 		// check if total is equal to results number
-		$this->assertEquals( $data[0]['total'], count( $data[0]['results'] ) );
+		$this->assertCount( $data[0]['total'], $data[0]['results'] );
 
 		// Ensure there is min one portlet data to test against
 		$this->assertGreaterThan( 0, $data[0]['total'] );
