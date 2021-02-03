@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Wladek92",
+			"Thibaut120094",
 			"Verdy p",
-			"Thibaut120094"
+			"Wladek92"
 		]
 	},
 	"bs-dashboards-desc": "Fournit des tableaux de bord aux utilisateurs et aux administrateurs",
@@ -27,6 +27,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "Enregistre la configuration du tableau de bord",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Renvoie le contenu pour certains widgets du tableau de bord.",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Renvoie le contenu de certains widgets de tableau de bord",
-	"action-dashboards-viewspecialpage-userdashboard": "afficher la page spéciale « {{int:userdashboard}} »",
+	"action-dashboards-viewspecialpage-userdashboard": "afficher la page spéciale « {{int:userdashboard}} »",
 	"right-dashboards-viewspecialpage-userdashboard": "Accéder à la page spéciale [[Special:UserDashboard]]"
 }

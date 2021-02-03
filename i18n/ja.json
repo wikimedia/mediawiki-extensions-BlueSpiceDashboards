@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki",
+			"Aefgh39622",
 			"Otokoume",
+			"Shirayuki",
 			"Suyama"
 		]
 	},
@@ -19,5 +20,6 @@
 	"bs-dashboard-userportlet-wikipage-title": "ウィキページ",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "ウィキページ",
 	"action-dashboards-viewspecialpage-userdashboard": "特別ページ「{{int:userdashboard}}」の閲覧",
-	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] を利用"
+	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] を利用",
+	"apihelp-bs-dashboard-task-param-dc": "キャッシュ制御パラメーター。ExtJS によって使用されます。"
 }

@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"NataChe",
-			"Ата",
 			"Piramidion",
-			"Vlad5250"
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"bs-dashboards-desc": "Створює панелі інструментів для користувачів і адміністраторів",
@@ -28,5 +28,5 @@
 	"apihelp-bs-dashboards-widgets-tasks-description": "Видає контент для деяких віджетів панелі",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Видає контент для деяких віджетів панелі",
 	"action-dashboards-viewspecialpage-userdashboard": "перегляд спеціальної сторінки «{{int:userdashboard}}»",
-	"right-dashboards-viewspecialpage-userdashboard": "доступ до спеціальної сторінки [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Доступ до спеціальної сторінки [[Special:UserDashboard]]"
 }

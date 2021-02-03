@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-dashboards-desc": "Pruža radnu tablu za korisnike i administratore",
 	"bs-specialadmindashboard-label": "Upravljačka tabla",
 	"bs-dashboards-addportlet": "Dodaj portlet",

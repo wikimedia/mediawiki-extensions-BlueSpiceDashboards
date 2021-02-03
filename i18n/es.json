@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe",
-			"Fitoschido",
 			"Carlosmg.dg",
-			"DannyS712"
+			"DannyS712",
+			"Fitoschido",
+			"Macofe"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneles para usuarios y administradores",
