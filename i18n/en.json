@@ -25,6 +25,6 @@
 	"apihelp-bs-dashboards-tasks-summary": "Saves dashboard configuration",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Returns content for some dashboard widgets",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Returns content for some dashboard widgets",
-	"action-dashboards-viewspecialpage-userdashboard":"view the special page \"{{int:userdashboard}}\"",
+	"action-dashboards-viewspecialpage-userdashboard": "view the special page \"{{int:userdashboard}}\"",
 	"right-dashboards-viewspecialpage-userdashboard": "Access to the special page [[Special:UserDashboard]]"
 }
