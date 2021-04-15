@@ -165,10 +165,10 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 					$allModules = array_merge( $allModules, $modules[$portlet['type']] );
 				}
 			}
-			return array_unique( $allModules );
+			return array_values( array_unique( $allModules ) );
 		} else {
 			$modules = array_values( $modules );
-			return array_unique( array_merge( ...$modules ) );
+			return array_values( array_unique( array_merge( ...$modules ) ) );
 		}
 	}
 
