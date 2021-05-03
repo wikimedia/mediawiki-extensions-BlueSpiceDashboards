@@ -79,7 +79,7 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDbw = wfGetDB( DB_MASTER );
+		$oDbw = wfGetDB( DB_PRIMARY );
 		$iUserId = $this->getUser()->getId();
 		$oDbw->replace(
 				'bs_dashboards_configs',
@@ -115,7 +115,7 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDbw = wfGetDB( DB_MASTER );
+		$oDbw = wfGetDB( DB_PRIMARY );
 		$oDbw->delete(
 			'bs_dashboards_configs',
 			[ 'dc_type' => 'admin' ]

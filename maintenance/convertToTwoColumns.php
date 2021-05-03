@@ -34,7 +34,7 @@ class BSDashboardsConvertToTwoColumns extends LoggedUpdateMaintenance {
 			$config[1] = array_merge( $config[1], $config[2] );
 			unset( $config[2] );
 
-			$oDbw = $this->getDB( DB_MASTER );
+			$oDbw = $this->getDB( DB_PRIMARY );
 			$oDbw->update(
 				'bs_dashboards_configs',
 				[

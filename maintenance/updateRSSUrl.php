@@ -61,7 +61,7 @@ class BsDashboardsUpdateRSSUrl extends LoggedUpdateMaintenance {
 
 			if ( $hasChange ) {
 				$portletConfig = FormatJson::encode( $portletConfig );
-				$oDbw = $this->getDB( DB_MASTER );
+				$oDbw = $this->getDB( DB_PRIMARY );
 				$oDbw->update(
 					'bs_dashboards_configs',
 					[

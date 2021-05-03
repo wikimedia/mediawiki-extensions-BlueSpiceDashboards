@@ -76,7 +76,7 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 			$aPortalConfig = FormatJson::encode( $aPortalConfig );
 			if ( $bHasChange ) {
 				$this->output( "Save changes to database\n" );
-				$oDbw = $this->getDB( DB_MASTER );
+				$oDbw = $this->getDB( DB_PRIMARY );
 				$oDbw->update(
 					'bs_dashboards_configs',
 					[
