@@ -111,5 +111,5 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	}
 }
 
-$maintClass = 'BSDashBoardsClearConfigMaintenance';
+$maintClass = BSDashBoardsClearConfigMaintenance::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

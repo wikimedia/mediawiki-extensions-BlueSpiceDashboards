@@ -90,5 +90,5 @@ class BsDashboardsUpdateRSSUrl extends LoggedUpdateMaintenance {
 	}
 }
 
-$maintClass = 'BsDashboardsUpdateRSSUrl';
+$maintClass = BsDashboardsUpdateRSSUrl::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

@@ -60,5 +60,5 @@ class BSDashboardsConvertToTwoColumns extends LoggedUpdateMaintenance {
 	}
 }
 
-$maintClass = 'BSDashboardsConvertToTwoColumns';
+$maintClass = BSDashboardsConvertToTwoColumns::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
