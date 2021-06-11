@@ -4,7 +4,8 @@
 			"Carlosmg.dg",
 			"DannyS712",
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"Rodney Araujo"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneles para usuarios y administradores",
@@ -23,5 +24,6 @@
 	"apihelp-bs-dashboards-tasks-description": "Guarda la configuración del tablero",
 	"apihelp-bs-dashboards-tasks-summary": "Guarda la configuración del tablero",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la página especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]",
+	"bs-dashboard-userportlet-wikipage-description": "Usa una página wiki para definir el ''widget''"
 }
