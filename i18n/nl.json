@@ -4,6 +4,7 @@
 			"Arg",
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"Siebrand",
 			"Sjoerddebruin"
 		]
@@ -21,5 +22,13 @@
 	"action-dashboards-viewspecialpage-userdashboard": "bekijk de speciale pagina \"{{int:userdashboard}}\"",
 	"bs-dashboard-userportlet-wikipage-title": "Wikipagina",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikipagina",
-	"right-dashboards-viewspecialpage-userdashboard": "Toegang hebben tot de speciale pagina [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Toegang hebben tot de speciale pagina [[Special:UserDashboard]]",
+	"bs-dashboard-userportlet-wikipage-description": "Een wikipagina gebruiken om de widget te definiëren",
+	"apihelp-bs-dashboard-task-param-dc": "Cache-controleparameter. Gebruikt door ExtJS.",
+	"apihelp-bs-dashboards-store-description": "Geeft een overzicht van alle beschikbare portlets",
+	"apihelp-bs-dashboards-store-summary": "Geeft een overzicht van alle beschikbare portlets",
+	"apihelp-bs-dashboards-tasks-description": "Slaat dashboardinstellingen op",
+	"apihelp-bs-dashboards-tasks-summary": "Slaat dashboardinstellingen op",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Geeft de inhoud terug van bepaalde dashboardwidgets",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Geeft de inhoud terug van bepaalde dashboardwidgets"
 }
