@@ -153,7 +153,8 @@
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddDashboardConfigsTable::callback",
 			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddClearConfigPostDatabaseUpdateMaintenance::callback"
-		]
+		],
+		"DeleteAccount": "\\BlueSpice\\Dashboards\\Hook\\DeleteAccount\\DeleteUserDashboard::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
