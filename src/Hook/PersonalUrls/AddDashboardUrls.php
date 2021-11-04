@@ -17,13 +17,15 @@ class AddDashboardUrls extends PersonalUrls {
 
 		$this->personal_urls['userdashboard'] = [
 			'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
-			'text' => $spFactory->getPage( 'UserDashboard' )->getDescription()
+			'text' => $spFactory->getPage( 'UserDashboard' )->getDescription(),
+			'position' => 120,
 		];
 
 		if ( in_array( 'sysop', $user->getGroups() ) ) {
 			$this->personal_urls['admindashboard'] = [
 				'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
-				'text' => $spFactory->getPage( 'AdminDashboard' )->getDescription()
+				'text' => $spFactory->getPage( 'AdminDashboard' )->getDescription(),
+				'position' => 130,
 			];
 		}
 		return true;
