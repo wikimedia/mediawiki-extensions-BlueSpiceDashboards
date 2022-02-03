@@ -11,7 +11,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	public function execute( $sParameter ) {
 		parent::execute( $sParameter );
 
-		$this->checkForReadOnly();
+		$this->checkReadOnly();
 
 		$this->getPortalConfig();
 		$this->getOutput()->addJsConfigVars(
@@ -78,23 +78,6 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	 * @return array
 	 */
 	abstract protected function getConds(): array;
-
-	/**
-	 * @return bool
-	 */
-	private function checkForReadOnly() {
-		if ( wfReadOnly() ) {
-			global $wgReadOnly;
-			$msg = $this->msg( 'bs-readonly', $wgReadOnly );
-			$this->getOutput()->addHTML(
-				'<script>var wgReadOnly = true; alert("' . $msg->escaped() . '");</script>'
-			);
-
-			return true;
-		}
-
-		return false;
-	}
 
 	/**
 	 * Not used currently - please dont delete
