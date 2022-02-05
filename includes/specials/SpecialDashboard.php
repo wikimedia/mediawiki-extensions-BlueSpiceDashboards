@@ -32,7 +32,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	 */
 	protected function getPortalConfig() {
 		$oDbr = wfGetDB( DB_REPLICA );
-		$res = $oDbr->select(
+		$row = $oDbr->selectRow(
 			'bs_dashboards_configs',
 			'*',
 			$this->getConds(),
@@ -40,8 +40,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 		);
 
 		$dbConfig = null;
-		if ( $oDbr->numRows( $res ) > 0 ) {
-			$row = $oDbr->fetchObject( $res );
+		if ( $row ) {
 			$dbConfig = FormatJson::decode( $row->dc_config, 1 );
 		}
 
