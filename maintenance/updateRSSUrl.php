@@ -2,6 +2,8 @@
 
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
+use Wikimedia\AtEase\AtEase;
+
 class BsDashboardsUpdateRSSUrl extends LoggedUpdateMaintenance {
 	public function __construct() {
 		parent::__construct();
@@ -23,10 +25,10 @@ class BsDashboardsUpdateRSSUrl extends LoggedUpdateMaintenance {
 			$hasChange = false;
 
 			try{
-				Wikimedia\suppressWarnings();
+				AtEase::suppressWarnings();
 				// backward compatible handling
 				$portletConfig = unserialize( $row->dc_config );
-				Wikimedia\restoreWarnings();
+				AtEase::restoreWarnings();
 			}catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}

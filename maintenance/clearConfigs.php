@@ -3,6 +3,7 @@
 require_once dirname( dirname( dirname( __DIR__ ) ) ) . '/maintenance/Maintenance.php';
 
 use MediaWiki\MediaWikiServices;
+use Wikimedia\AtEase\AtEase;
 
 class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 	public function __construct() {
@@ -48,10 +49,10 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 			$bHasChange = false;
 
 			try{
-				Wikimedia\suppressWarnings();
+				AtEase::suppressWarnings();
 				// backward compatible handling
 				$aPortalConfig = unserialize( $row->dc_config );
-				Wikimedia\restoreWarnings();
+				AtEase::restoreWarnings();
 			}catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}
