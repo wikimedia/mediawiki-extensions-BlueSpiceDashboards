@@ -3,7 +3,8 @@
 		"authors": [
 			"Alirezaaa",
 			"Amirsara",
-			"Jeeputer"
+			"Jeeputer",
+			"Beginneruser"
 		]
 	},
 	"bs-dashboards-desc": "برای کاربران و مدیران داشبورد فراهم می‌کند",
@@ -21,6 +22,6 @@
 	"bs-dashboard-userportlet-wikipage-wiki-article": "صفحه ویکی",
 	"apihelp-bs-dashboards-tasks-description": "تنظیمات داشبورد را ذخیره می‌کند",
 	"apihelp-bs-dashboards-tasks-summary": "تنظیمات داشبورد را ذخیره می‌کند",
-	"action-dashboards-viewspecialpage-userdashboard": "مشاهدهٔ ویژه‌صفحهٔ «{{int:userdashboard}}»",
-	"right-dashboards-viewspecialpage-userdashboard": "دسترسی به ویژه‌صفحهٔ [[Special:UserDashboard]]"
+	"action-dashboards-viewspecialpage-userdashboard": "مشاهدهٔ صفحهٔ ویژه «{{int:userdashboard}}»",
+	"right-dashboards-viewspecialpage-userdashboard": "دسترسی به صفحهٔ ویژه [[Special:UserDashboard]]"
 }
