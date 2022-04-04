@@ -5,7 +5,8 @@
 			"DannyS712",
 			"Fitoschido",
 			"Macofe",
-			"Rodney Araujo"
+			"Rodney Araujo",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneles para usuarios y administradores",
@@ -19,11 +20,15 @@
 	"bs-dashboard-userportlet-calendar-title": "Calendario",
 	"bs-dashboard-userportlet-calendar-description": "Calendario",
 	"bs-dashboard-userportlet-wikipage-title": "WikiPage",
+	"bs-dashboard-userportlet-wikipage-description": "Usa una página wiki para definir el ''widget''",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Página wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parámetro de control de caché. Usado por ExtJS.",
+	"apihelp-bs-dashboards-store-description": "Lista de todos los portlets disponibles",
+	"apihelp-bs-dashboards-store-summary": "Lista de todos los portlets disponibles",
 	"apihelp-bs-dashboards-tasks-description": "Guarda la configuración del tablero",
 	"apihelp-bs-dashboards-tasks-summary": "Guarda la configuración del tablero",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Devuelve el contenido de algunos widgets del panel de control",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Devuelve el contenido de algunos widgets del panel de control",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la página especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]",
-	"bs-dashboard-userportlet-wikipage-description": "Usa una página wiki para definir el ''widget''"
+	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]"
 }
