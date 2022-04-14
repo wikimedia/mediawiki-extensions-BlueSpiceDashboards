@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpiceDashboards",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
