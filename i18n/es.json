@@ -3,6 +3,7 @@
 		"authors": [
 			"Carlosmg.dg",
 			"DannyS712",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"Rodney Araujo"
@@ -25,5 +26,9 @@
 	"apihelp-bs-dashboards-tasks-summary": "Guarda la configuración del tablero",
 	"action-dashboards-viewspecialpage-userdashboard": "ver la página especial \"{{int:userdashboard}}\"",
 	"right-dashboards-viewspecialpage-userdashboard": "Acceso a la página especial [[Special:UserDashboard]]",
-	"bs-dashboard-userportlet-wikipage-description": "Usa una página wiki para definir el ''widget''"
+	"bs-dashboard-userportlet-wikipage-description": "Usa una página wiki para definir el ''widget''",
+	"apihelp-bs-dashboards-store-description": "Lista de todos los portlets disponibles",
+	"apihelp-bs-dashboards-store-summary": "Lista de todos los portlets disponibles",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Devuelve el contenido de algunos widgets del panel de control",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Devuelve el contenido de algunos widgets del panel de control"
 }

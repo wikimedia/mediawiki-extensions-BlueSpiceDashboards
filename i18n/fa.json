@@ -3,24 +3,25 @@
 		"authors": [
 			"Alirezaaa",
 			"Amirsara",
+			"Beginneruser",
 			"Jeeputer"
 		]
 	},
 	"bs-dashboards-desc": "برای کاربران و مدیران داشبورد فراهم می‌کند",
-	"bs-specialadmindashboard-label": "داشبورد",
+	"bs-specialadmindashboard-label": "پیش‌خوان",
 	"bs-dashboards-addportlet": "افزودن پورتلت",
 	"bs-dashboards-portlets": "پورتلت‌ها",
 	"prefs-dashboards": "داشبوردها",
-	"bs-dashboards-pref-userdashboardonlogo": "نشان وب‌گاه به داشبورد کاربری پیوند می‌دهد",
-	"admindashboard": "داشبورد مدیریت",
-	"userdashboard": "داشبورد کاربری",
+	"bs-dashboards-pref-userdashboardonlogo": "نشان وب‌گاه به پیش‌خوان کاربری پیوند می‌دهد",
+	"admindashboard": "پیش‌خوان مدیر",
+	"userdashboard": "پیش‌خوان کاربری",
 	"bs-dashboard-userportlet-calendar-title": "تقویم",
 	"bs-dashboard-userportlet-calendar-description": "تقویم",
 	"bs-dashboard-userportlet-wikipage-title": "ویکی‌صفحه",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "صفحه ویکی",
 	"bs-dashboard-userportlet-wikipage-description": "برای تعریف ابزارک از یک صفحهٔ ویکی استفاده کنید",
-	"apihelp-bs-dashboards-tasks-description": "تنظیمات داشبورد را ذخیره می‌کند",
-	"apihelp-bs-dashboards-tasks-summary": "تنظیمات داشبورد را ذخیره می‌کند",
-	"action-dashboards-viewspecialpage-userdashboard": "مشاهدهٔ ویژه‌صفحهٔ «{{int:userdashboard}}»",
-	"right-dashboards-viewspecialpage-userdashboard": "دسترسی به ویژه‌صفحهٔ [[Special:UserDashboard]]"
+	"apihelp-bs-dashboards-tasks-description": "پیکربندی پیش‌خوان ذخیره شد",
+	"apihelp-bs-dashboards-tasks-summary": "پیکربندی پیش‌خوان ذخیره شد",
+	"action-dashboards-viewspecialpage-userdashboard": "مشاهدهٔ صفحهٔ ویژه «{{int:userdashboard}}»",
+	"right-dashboards-viewspecialpage-userdashboard": "دسترسی به صفحهٔ ویژه [[Special:UserDashboard]]"
 }
