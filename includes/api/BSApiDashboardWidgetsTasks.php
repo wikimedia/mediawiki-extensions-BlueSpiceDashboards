@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
+use MediaWiki\MediaWikiServices;
 
 class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
@@ -65,7 +66,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 			$oResponse->payload = [ "html" => wfMessage( 'bs-permissionerror' )->plain() ];
 			return $oResponse;
 		}
-		$oWikiPage = WikiPage::factory( $oTitle );
+		$oWikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $oTitle );
 		if ( !$oWikiPage->getContent() ) {
 			$oResponse->success = false;
 			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
