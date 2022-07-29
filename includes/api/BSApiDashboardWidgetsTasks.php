@@ -1,7 +1,6 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
-use MediaWiki\MediaWikiServices;
 
 class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
@@ -44,6 +43,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 	 */
 	public function task_wikipage( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
+		$services = $this->getServices();
 
 		if ( !isset( $oTaskData->wikiArticle ) ) {
 			$oResponse->success = true;
@@ -58,22 +58,21 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan( 'read', $this->getUser(), $oTitle )
+		if ( !$services->getPermissionManager()->userCan( 'read', $this->getUser(), $oTitle )
 		) {
 			$oResponse->success = false;
 			$oResponse->payload = [ "html" => wfMessage( 'bs-permissionerror' )->plain() ];
 			return $oResponse;
 		}
-		$oWikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $oTitle );
+		$oWikiPage = $services->getWikiPageFactory()->newFromTitle( $oTitle );
 		if ( !$oWikiPage->getContent() ) {
 			$oResponse->success = false;
 			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
 			return $oResponse;
 		}
 
-		$sHTML = $oWikiPage->getContent()->getParserOutput( $oTitle )->getText();
+		$contentRenderer = $services->getContentRenderer();
+		$sHTML = $contentRenderer->getParserOutput( $oWikiPage->getContent(), $oTitle )->getText();
 
 		$oResponse->success = true;
 		$oResponse->payload = [ "html" => $sHTML ];
