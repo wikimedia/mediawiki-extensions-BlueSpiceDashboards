@@ -1,0 +1,49 @@
+[
+	{
+		"name": "bs_dashboards_configs",
+		"comment": "BlueSpice: Dashboards - Stores dashboard configs",
+		"columns": [
+			{
+				"name": "dc_type",
+				"comment": "Allows to store different types of portals: i.e. 'user', 'admin', 'tag'",
+				"type": "binary",
+				"options": {
+					"length": 30,
+					"notnull": true,
+					"default": "user"
+				}
+			},
+			{
+				"name": "dc_identifier",
+				"comment": " Depends on 'dc_type'. May be a user.user_id or a combination of page.page_id and a tag identifier",
+				"type": "binary",
+				"options": {
+					"length": 100,
+					"notnull": true,
+					"default": 0
+				}
+			},
+			{
+				"name": "dc_config",
+				"comment": "This stores the portal config as a JSON string",
+				"type": "blob",
+				"options": {
+					"length": 16777215,
+					"notnull": true
+				}
+			},
+			{
+				"name": "dc_timestamp",
+				"comment": "This is for future use and may allow some simple verisioning mechanism",
+				"type": "mwtimestamp",
+				"options": { }
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"dc_type",
+			"dc_identifier",
+			"dc_timestamp"
+		]
+	}
+]
