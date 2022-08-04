@@ -17,5 +17,6 @@
 	"bs-dashboard-userportlet-calendar-description": "Календар",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Викистраница",
 	"action-dashboards-viewspecialpage-userdashboard": "преглед на службената страница „{{int:userdashboard}}“",
-	"right-dashboards-viewspecialpage-userdashboard": "Пристап до службената страница [[Special:UserDashboard]]"
+	"right-dashboards-viewspecialpage-userdashboard": "Пристап до службената страница [[Special:UserDashboard]]",
+	"bs-dashboard-userportlet-wikipage-title": "Викистраница"
 }
