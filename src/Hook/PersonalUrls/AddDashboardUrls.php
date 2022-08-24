@@ -13,7 +13,8 @@ class AddDashboardUrls extends PersonalUrls {
 
 	protected function doProcess() {
 		$user = $this->getContext()->getUser();
-		$spFactory = \MediaWiki\MediaWikiServices::getInstance()->getSpecialPageFactory();
+		$services = $this->getServices();
+		$spFactory = $services->getSpecialPageFactory();
 
 		$this->personal_urls['userdashboard'] = [
 			'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
@@ -21,7 +22,8 @@ class AddDashboardUrls extends PersonalUrls {
 			'position' => 120,
 		];
 
-		if ( in_array( 'sysop', $user->getGroups() ) ) {
+		$userGroupManager = $services->getUserGroupManager();
+		if ( in_array( 'sysop', $userGroupManager->getUserGroups( $user ) ) ) {
 			$this->personal_urls['admindashboard'] = [
 				'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
 				'text' => $spFactory->getPage( 'AdminDashboard' )->getDescription(),
