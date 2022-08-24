@@ -3,7 +3,6 @@
 namespace BlueSpice\Dashboards\Hook\PersonalUrls;
 
 use BlueSpice\Hook\PersonalUrls;
-use MediaWiki\MediaWikiServices;
 
 class AddDashboardUrls extends PersonalUrls {
 
@@ -14,9 +13,8 @@ class AddDashboardUrls extends PersonalUrls {
 
 	protected function doProcess() {
 		$user = $this->getContext()->getUser();
-		$services = MediaWikiServices::getInstance();
+		$services = $this->getServices();
 		$spFactory = $services->getSpecialPageFactory();
-		$userGroupManager = $services->getUserGroupManager();
 
 		$this->personal_urls['userdashboard'] = [
 			'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
@@ -24,6 +22,7 @@ class AddDashboardUrls extends PersonalUrls {
 			'position' => 120,
 		];
 
+		$userGroupManager = $services->getUserGroupManager();
 		if ( in_array( 'sysop', $userGroupManager->getUserGroups( $user ) ) ) {
 			$this->personal_urls['admindashboard'] = [
 				'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
