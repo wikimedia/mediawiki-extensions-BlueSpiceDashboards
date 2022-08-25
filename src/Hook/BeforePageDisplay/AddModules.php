@@ -11,10 +11,8 @@ class AddModules extends BeforePageDisplay {
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		return !$this->out->getUser()->getOption(
-			'bs-dashboards-pref-userdashboardonlogo',
-			false
-		);
+		return !$this->getServices()->getUserOptionsLookup()
+			->getBoolOption( $this->out->getUser(), 'bs-dashboards-pref-userdashboardonlogo', false );
 	}
 
 	/**
