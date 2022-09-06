@@ -4,5 +4,7 @@
 			"Yupik"
 		]
 	},
+	"bs-dashboard-userportlet-wikipage-title": "Wikiseidd",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikiseidd",
 	"action-dashboards-viewspecialpage-userdashboard": "ǩiččâd tuåimmseeid \"{{int:userdashboard}}\""
 }
