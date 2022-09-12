@@ -1,7 +1,5 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
-
 abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 
 	/**
@@ -51,7 +49,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 			[],
 		];
 
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer = $this->services->getHookContainer();
 		$hookContainer->run( 'BSDashboardsUserDashboardPortalConfig', [
 			$this,
 			&$portalConfig,
