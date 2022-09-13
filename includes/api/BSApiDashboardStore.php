@@ -10,7 +10,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 	protected function makeData( $sQuery = '' ) {
 		$aPortlets = [];
 
-		$this->getServices()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSDashboardsUserDashboardPortalPortlets',
 			[
 				&$aPortlets
@@ -27,7 +27,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
 		$aPortlets = [];
 
-		$this->getServices()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSDashboardsAdminDashboardPortalPortlets',
 			[
 				&$aPortlets
@@ -44,7 +44,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 
 		$aPortlets = [];
 
-		$this->getServices()->getHookContainer()->run( 'BSDashboardsGetPortlets', [
+		$this->services->getHookContainer()->run( 'BSDashboardsGetPortlets', [
 			&$aPortlets
 		] );
 
