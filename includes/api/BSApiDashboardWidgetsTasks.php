@@ -43,7 +43,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 	 */
 	public function task_wikipage( $oTaskData, $aParams ) {
 		$oResponse = $this->makeStandardReturn();
-		$services = $this->getServices();
+		$services = $this->services;
 
 		if ( !isset( $oTaskData->wikiArticle ) ) {
 			$oResponse->success = true;
@@ -58,8 +58,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		if ( !$services->getPermissionManager()->userCan( 'read', $this->getUser(), $oTitle )
-		) {
+		if ( !$services->getPermissionManager()->userCan( 'read', $this->getUser(), $oTitle ) ) {
 			$oResponse->success = false;
 			$oResponse->payload = [ "html" => wfMessage( 'bs-permissionerror' )->plain() ];
 			return $oResponse;
