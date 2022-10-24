@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
+use Wikimedia\ParamValidator\ParamValidator;
 
 class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
@@ -97,8 +98,8 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 			$paramList,
 			[
 				'_dc' => [
-					ApiBase::PARAM_TYPE => 'string',
-					ApiBase::PARAM_REQUIRED => false,
+					ParamValidator::PARAM_TYPE => 'string',
+					ParamValidator::PARAM_REQUIRED => false,
 					// TODO: Description
 					ApiBase::PARAM_HELP_MSG => 'apihelp-bs-dashboard-task-param-dc',
 				]
