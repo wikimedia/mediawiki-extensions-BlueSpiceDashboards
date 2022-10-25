@@ -1,37 +1,40 @@
 <?php
 
-namespace BlueSpice\Dashboards\Hook\PersonalUrls;
+namespace BlueSpice\Dashboards\HookHandler;
 
-use BlueSpice\Hook\PersonalUrls;
+use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
 
-class AddDashboardUrls extends PersonalUrls {
+class AddDashboardUrls implements SkinTemplateNavigation__UniversalHook {
 
-	protected function skipProcessing() {
-		$user = $this->getContext()->getUser();
-		return !$user->isRegistered();
-	}
+	/**
+	 * // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+	 * @inheritDoc
+	 */
+	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
+		$user = $sktemplate->getUser();
+		if ( !$user->isRegistered() ) {
+			return;
+		}
 
-	protected function doProcess() {
-		$user = $this->getContext()->getUser();
 		$services = MediaWikiServices::getInstance();
 		$spFactory = $services->getSpecialPageFactory();
 		$userGroupManager = $services->getUserGroupManager();
 
-		$this->personal_urls['userdashboard'] = [
+		$links['user-menu']['userdashboard'] = [
+			'id' => 'pt-userdashboard',
 			'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
 			'text' => $spFactory->getPage( 'UserDashboard' )->getDescription(),
 			'position' => 120,
 		];
 
 		if ( in_array( 'sysop', $userGroupManager->getUserGroups( $user ) ) ) {
-			$this->personal_urls['admindashboard'] = [
+			$links['user-menu']['admindashboard'] = [
+				'id' => 'pt-admindashboard',
 				'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
 				'text' => $spFactory->getPage( 'AdminDashboard' )->getDescription(),
 				'position' => 130,
 			];
 		}
-		return true;
 	}
-
 }
