@@ -146,9 +146,14 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceDashboards/resources"
 	},
+	"HookHandlers": {
+		"addDashboardUrls": {
+			"class": "\\BlueSpice\\Dashboards\\HookHandler\\AddDashboardUrls"
+		}
+	},
 	"Hooks": {
 		"GetPreferences": "\\BlueSpice\\Dashboards\\Hook\\GetPreferences\\AddUserDashboardOnLogo::callback",
-		"PersonalUrls": "\\BlueSpice\\Dashboards\\Hook\\PersonalUrls\\AddDashboardUrls::callback",
+		"SkinTemplateNavigation::Universal": "addDashboardUrls",
 		"BeforePageDisplay": "\\BlueSpice\\Dashboards\\Hook\\BeforePageDisplay\\AddModules::callback",
 		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalConfig\\AddConfig::callback",
 		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\Dashboards\\Hook\\UserDashboardPortalPortlets\\AddPortlets::callback",
