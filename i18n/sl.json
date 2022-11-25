@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eleassar",
 			"Skalcaa"
 		]
 	},
@@ -13,5 +14,7 @@
 	"admindashboard": "Skrbniška nadzorna plošča",
 	"userdashboard": "Uporabniška nadzorna plošča",
 	"bs-dashboard-userportlet-calendar-title": "Koledar",
-	"bs-dashboard-userportlet-calendar-description": "Koledar"
+	"bs-dashboard-userportlet-calendar-description": "Koledar",
+	"bs-dashboard-userportlet-wikipage-title": "Vikistran",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Vikistran"
 }
