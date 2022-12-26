@@ -16,5 +16,8 @@
 	"bs-dashboard-userportlet-calendar-title": "Koledar",
 	"bs-dashboard-userportlet-calendar-description": "Koledar",
 	"bs-dashboard-userportlet-wikipage-title": "Vikistran",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "Vikistran"
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Vikistran",
+	"bs-dashboard-userportlet-wikipage-description": "Za opredelitev gradnika uporabite stran viki",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Vrne vsebino za nekatere gradnike na nadzorni plošči",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Vrne vsebino za nekatere gradnike na nadzorni plošči"
 }
