@@ -19,5 +19,12 @@
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Vikistran",
 	"bs-dashboard-userportlet-wikipage-description": "Za opredelitev gradnika uporabite stran viki",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Vrne vsebino za nekatere gradnike na nadzorni plošči",
-	"apihelp-bs-dashboards-widgets-tasks-summary": "Vrne vsebino za nekatere gradnike na nadzorni plošči"
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Vrne vsebino za nekatere gradnike na nadzorni plošči",
+	"apihelp-bs-dashboard-task-param-dc": "Nadzorni parameter predpomnilnika. Uporablja ga ExtJS.",
+	"apihelp-bs-dashboards-store-description": "Navede vse razpoložljive portalske programčke",
+	"apihelp-bs-dashboards-store-summary": "Navede vse razpoložljive portalske programčke",
+	"apihelp-bs-dashboards-tasks-description": "Shrani konfiguracijo nadzorne plošče",
+	"apihelp-bs-dashboards-tasks-summary": "Shrani konfiguracijo nadzorne plošče",
+	"action-dashboards-viewspecialpage-userdashboard": "ogled posebne strani »{{int:userdashboard}}«",
+	"right-dashboards-viewspecialpage-userdashboard": "Dostop do posebne strani [[Special:UserDashboard]]"
 }
