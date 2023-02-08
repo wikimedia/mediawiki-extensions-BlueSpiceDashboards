@@ -4,7 +4,8 @@
 			"Aefgh39622",
 			"Otokoume",
 			"Shirayuki",
-			"Suyama"
+			"Suyama",
+			"背番号4のエース"
 		]
 	},
 	"bs-dashboards-desc": "利用者向けおよび管理者向けのダッシュボードを提供する",
@@ -18,8 +19,15 @@
 	"bs-dashboard-userportlet-calendar-title": "カレンダー",
 	"bs-dashboard-userportlet-calendar-description": "カレンダー",
 	"bs-dashboard-userportlet-wikipage-title": "ウィキページ",
+	"bs-dashboard-userportlet-wikipage-description": "Wikiページを使用してウィジェットを定義する",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "ウィキページ",
 	"apihelp-bs-dashboard-task-param-dc": "キャッシュ制御パラメーター。ExtJS によって使用されます。",
+	"apihelp-bs-dashboards-store-description": "使用可能なすべてのポートレットを一覧表示します",
+	"apihelp-bs-dashboards-store-summary": "使用可能なすべてのポートレットを一覧表示します",
+	"apihelp-bs-dashboards-tasks-description": "ダッシュボードの構成を保存します",
+	"apihelp-bs-dashboards-tasks-summary": "ダッシュボードの構成を保存します",
+	"apihelp-bs-dashboards-widgets-tasks-description": "一部のダッシュボードウィジェットのコンテンツを返します",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "一部のダッシュボードウィジェットのコンテンツを返します",
 	"action-dashboards-viewspecialpage-userdashboard": "特別ページ「{{int:userdashboard}}」の閲覧",
 	"right-dashboards-viewspecialpage-userdashboard": "特別ページ [[Special:UserDashboard]] を利用"
 }
