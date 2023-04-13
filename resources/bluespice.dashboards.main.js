@@ -6,6 +6,8 @@
 		'#bs-logo a',
 		//BlueSpiceCalumma
 		'nav.navbar.calumma-desktop-visible .bs-logo a',
+		//BlueSpiceDiscovery
+		'.east-col-nav #nb-logo',
 		//BlueSpiceCalumma mobile
 		'nav.navbar.calumma-mobile-visible .bs-logo a',
 		//Okay, now we're desperate
