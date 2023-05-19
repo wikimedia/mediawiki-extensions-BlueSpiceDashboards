@@ -7,5 +7,7 @@
 	"bs-specialadmindashboard-label": "လုပ်ဆောင်ချက်များ ပြသသည့်နေရာ",
 	"prefs-dashboards": "လုပ်ဆောင်ချက်များ ပြသသည့်နေရာများ",
 	"bs-dashboard-userportlet-calendar-title": "ပြက္ခဒိန်",
-	"bs-dashboard-userportlet-calendar-description": "ပြက္ခဒိန်"
+	"bs-dashboard-userportlet-calendar-description": "ပြက္ခဒိန်",
+	"bs-dashboard-userportlet-wikipage-title": "ဝီကီစာမျက်နှာ",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "ဝီကီ စာမျက်နှာ"
 }
