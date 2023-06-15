@@ -7,6 +7,8 @@
 	},
 	"bs-dashboards-desc": "사용자와 관리자에게 대시보드를 제공합니다",
 	"bs-specialadmindashboard-label": "대시보드",
+	"bs-dashboards-addportlet": "포틀릿 추가",
+	"bs-dashboards-portlets": "포틀릿",
 	"prefs-dashboards": "대시보드",
 	"bs-dashboards-pref-userdashboardonlogo": "사용자 대시보드의 사이트 로고 링크",
 	"admindashboard": "관리자 대시보드",
@@ -17,7 +19,12 @@
 	"bs-dashboard-userportlet-wikipage-description": "소도구를 정의하려면 위키 문서를 사용하십시오",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "위키 페이지",
 	"apihelp-bs-dashboard-task-param-dc": "캐시 제어 변수입니다. ExtJS에 의해 사용됩니다.",
+	"apihelp-bs-dashboards-store-description": "사용 가능한 모든 포틀릿을 나열합니다",
+	"apihelp-bs-dashboards-store-summary": "사용 가능한 모든 포틀릿을 나열합니다",
 	"apihelp-bs-dashboards-tasks-description": "대시보드 설정 저장",
 	"apihelp-bs-dashboards-tasks-summary": "대시보드 설정을 저장합니다",
-	"action-dashboards-viewspecialpage-userdashboard": "특수 문서 \"{{int:userdashboard}}\" 보기"
+	"apihelp-bs-dashboards-widgets-tasks-description": "일부 대시보드 위젯의 내용을 반환합니다",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "일부 대시보드 위젯의 내용을 반환합니다",
+	"action-dashboards-viewspecialpage-userdashboard": "특수 문서 \"{{int:userdashboard}}\" 보기",
+	"right-dashboards-viewspecialpage-userdashboard": "[[Special:UserDashboard]] 특수 문서로 접근"
 }
