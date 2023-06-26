@@ -16,8 +16,6 @@
 	"bs-dashboard-userportlet-wikipage-title": "VikiPuslapis",
 	"bs-dashboard-userportlet-wikipage-description": "Naudokite viki puslapį valdiklio apibrėžimui",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Viki puslapis",
-	"apihelp-bs-dashboards-tasks-description": "Išsaugo prietaisų skydelio konfigūraciją",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Gražina kai kurių prietaisų skydelio valdiklių turinį",
 	"action-dashboards-viewspecialpage-userdashboard": "žiūrėti specialų puslapį „{{int:userdashboard}}“",
 	"right-dashboards-viewspecialpage-userdashboard": "Prieiga prie specialaus puslapio [[Special:UserDashboard]]"
 }

@@ -18,11 +18,8 @@
 	"bs-dashboard-userportlet-wikipage-description": "Bruk ei wikiside for å definere widgeten",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Wikiside",
 	"apihelp-bs-dashboard-task-param-dc": "Kontrollparameter for mellomlagring. Brukes av ExtJS.",
-	"apihelp-bs-dashboards-store-description": "Lister opp alle tilgjengelige portletter",
 	"apihelp-bs-dashboards-store-summary": "Lister opp alle tilgjengelige portletter",
-	"apihelp-bs-dashboards-tasks-description": "Lagrer kontrollpanelkonfigurasjon",
 	"apihelp-bs-dashboards-tasks-summary": "Lagrer kontrollpanelkonfigurasjon",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Returnerer innhold for noen kontrollpanelwidgeter",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Returnerer innhold for noen kontrollpanelwidgeter",
 	"action-dashboards-viewspecialpage-userdashboard": "viser spesialsiden «{{int:userdashboard}}»",
 	"right-dashboards-viewspecialpage-userdashboard": "Tilgang til spesialsiden [[Special:UserDashboard]]"

@@ -27,7 +27,6 @@
 	"bs-dashboard-userportlet-wikipage-description": "Используйте вики-страницу для определения виджета",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Вики-страница",
 	"apihelp-bs-dashboard-task-param-dc": "Параметр управления кешем. Используется ExtJS.",
-	"apihelp-bs-dashboards-store-description": "Список всех доступных портлетов",
 	"apihelp-bs-dashboards-store-summary": "Список всех доступных портлетов",
 	"action-dashboards-viewspecialpage-userdashboard": "просмотр служебной страницы «{{int:userdashboard}}»",
 	"right-dashboards-viewspecialpage-userdashboard": "Доступ к служебной странице [[Special:UserDashboard]]."

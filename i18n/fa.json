@@ -20,7 +20,6 @@
 	"bs-dashboard-userportlet-wikipage-title": "ویکی‌صفحه",
 	"bs-dashboard-userportlet-wikipage-description": "برای تعریف ابزارک از یک صفحهٔ ویکی استفاده کنید",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "صفحه ویکی",
-	"apihelp-bs-dashboards-tasks-description": "پیکربندی پیش‌خوان ذخیره شد",
 	"apihelp-bs-dashboards-tasks-summary": "پیکربندی پیش‌خوان ذخیره شد",
 	"action-dashboards-viewspecialpage-userdashboard": "مشاهدهٔ صفحهٔ ویژه «{{int:userdashboard}}»",
 	"right-dashboards-viewspecialpage-userdashboard": "دسترسی به صفحهٔ ویژه [[Special:UserDashboard]]"

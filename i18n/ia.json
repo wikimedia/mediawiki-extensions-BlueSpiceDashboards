@@ -18,11 +18,8 @@
 	"bs-dashboard-userportlet-wikipage-description": "Usar un pagina wiki pro definir le widget",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Pagina wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parametro de controlo del cache. Usate per ExtJS.",
-	"apihelp-bs-dashboards-store-description": "Lista tote le <i>portlets</i> disponibile",
 	"apihelp-bs-dashboards-store-summary": "Lista tote le <i>portlets</i> disponibile",
-	"apihelp-bs-dashboards-tasks-description": "Salveguarda le configuration del tabuliero de instrumentos",
 	"apihelp-bs-dashboards-tasks-summary": "Salveguarda le configuration del tabuliero de instrumentos",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Retorna le contento de alcun <i>widgets</i> del tabuliero de instrumentos",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Retorna le contento de alcun <i>widgets</i> del tabuliero de instrumentos",
 	"action-dashboards-viewspecialpage-userdashboard": "vider le pagina special \"{{int:userdashboard}}\"",
 	"right-dashboards-viewspecialpage-userdashboard": "Accesso al pagina special [[Special:UserDashboard]]"

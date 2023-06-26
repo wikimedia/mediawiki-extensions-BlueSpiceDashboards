@@ -20,11 +20,8 @@
 	"bs-dashboard-userportlet-wikipage-description": "Widget'ı tanımlamak için bir viki sayfası kullanın",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Viki sayfa",
 	"apihelp-bs-dashboard-task-param-dc": "Önbellek kontrol parametresi. ExtJS tarafından kullanılır.",
-	"apihelp-bs-dashboards-store-description": "Mevcut tüm portletleri listeler",
 	"apihelp-bs-dashboards-store-summary": "Mevcut tüm portletleri listeler",
-	"apihelp-bs-dashboards-tasks-description": "Pano yapılandırmasını kaydeder",
 	"apihelp-bs-dashboards-tasks-summary": "Pano yapılandırmasını kaydeder",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Bazı pano widget'ları için içerik döndürür",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Bazı pano widget'ları için içerik döndürür",
 	"action-dashboards-viewspecialpage-userdashboard": "\"{{int:userdashboard}}\" özel sayfasını görüntüle",
 	"right-dashboards-viewspecialpage-userdashboard": "[[Special:UserDashboard]] özel sayfaya erişim"

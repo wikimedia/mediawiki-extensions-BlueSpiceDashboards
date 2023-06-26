@@ -21,11 +21,8 @@
 	"bs-dashboard-userportlet-wikipage-description": "שימוש בדף ויקי כדי להגדיר את הכלי",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "דף ויקי",
 	"apihelp-bs-dashboard-task-param-dc": "פרמטר בקרת מטמון. בשימוש ExtJS.",
-	"apihelp-bs-dashboards-store-description": "רשימת כל התיבות הזמינות",
 	"apihelp-bs-dashboards-store-summary": "רשימת כל התיבות הזמינות",
-	"apihelp-bs-dashboards-tasks-description": "שמירת תצורת לוח המחוונים",
 	"apihelp-bs-dashboards-tasks-summary": "שמירת תצורת לוח המחוונים",
-	"apihelp-bs-dashboards-widgets-tasks-description": "החזרת תוכן עבור חלק מכלי לוח המחוונים",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "החזרת תוכן עבור חלק מכלי לוח המחוונים",
 	"action-dashboards-viewspecialpage-userdashboard": "לצפות בדף המיוחד \"{{int:userdashboard}}\"",
 	"right-dashboards-viewspecialpage-userdashboard": "גישה לדף המיוחד [[Special:UserDashboard]]"

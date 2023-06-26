@@ -20,11 +20,8 @@
 	"bs-dashboard-userportlet-wikipage-description": "Користи вики страницу да дефинишете виџет",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Вики страница",
 	"apihelp-bs-dashboard-task-param-dc": "Параметар за контролисање кеш меморије. Користите се од стране ExtJS.",
-	"apihelp-bs-dashboards-store-description": "Излистава све доступне портлете",
 	"apihelp-bs-dashboards-store-summary": "Излистава све доступне портлете",
-	"apihelp-bs-dashboards-tasks-description": "Чува конфигурацију управљачке табле",
 	"apihelp-bs-dashboards-tasks-summary": "Чува конфигурацију управљачке табле",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Враћа садржај за неке виџете управљачких табли",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Враћа садржај за неке виџете управљачких табли",
 	"action-dashboards-viewspecialpage-userdashboard": "погледате посебну страницу „{{int:userdashboard}}”",
 	"right-dashboards-viewspecialpage-userdashboard": "приступ посебној страници [[Special:UserDashboard]]"
