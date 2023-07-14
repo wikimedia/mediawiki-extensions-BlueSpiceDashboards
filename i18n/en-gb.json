@@ -1,12 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Codynguyen1116",
-			"Mschlindwein",
-			"Usandaru555"
+			"Piano1forte2"
 		]
 	},
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Wiki page",
 	"apihelp-bs-dashboards-store-description": "Lists all available portlets",
-	"apihelp-bs-dashboards-tasks-description": "Saves dashboard configuration"
+	"apihelp-bs-dashboards-tasks-description": "Saves dashboard configuration",
+	"action-dashboards-viewspecialpage-userdashboard": "view the special page '{{int:userdashboard}}'"
 }
