@@ -3,8 +3,10 @@
 		"authors": [
 			"Codynguyen1116",
 			"Mschlindwein",
-			"Usandaru555"
+			"Usandaru555",
+			"Piano1forte2"
 		]
 	},
-	"bs-dashboard-userportlet-wikipage-wiki-article": "Wiki page"
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Wiki page",
+	"action-dashboards-viewspecialpage-userdashboard": "view the special page '{{int:userdashboard}}'"
 }
