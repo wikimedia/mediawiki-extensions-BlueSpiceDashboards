@@ -48,14 +48,14 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 
 		if ( !isset( $oTaskData->wikiArticle ) ) {
 			$oResponse->success = true;
-			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
+			$oResponse->payload = [ "html" => wfMessage( 'title-invalid' )->plain() ];
 			return $oResponse;
 		}
 
 		$oTitle = Title::newFromText( $oTaskData->wikiArticle );
 		if ( !$oTitle ) {
 			$oResponse->success = false;
-			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
+			$oResponse->payload = [ "html" => wfMessage( 'title-invalid' )->plain() ];
 			return $oResponse;
 		}
 
@@ -67,7 +67,7 @@ class BSApiDashboardWidgetsTasks extends BSApiTasksBase {
 		$oWikiPage = $services->getWikiPageFactory()->newFromTitle( $oTitle );
 		if ( !$oWikiPage->getContent() ) {
 			$oResponse->success = false;
-			$oResponse->payload = [ "html" => wfMessage( 'compare-invalid-title' )->plain() ];
+			$oResponse->payload = [ "html" => wfMessage( 'title-invalid' )->plain() ];
 			return $oResponse;
 		}
 
