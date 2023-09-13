@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneis de control para usuarios e administradores",
@@ -14,8 +15,8 @@
 	"userdashboard": "Panel de usuario",
 	"bs-dashboard-userportlet-calendar-title": "Calendario",
 	"bs-dashboard-userportlet-calendar-description": "Calendario",
-	"bs-dashboard-userportlet-wikipage-title": "WikiPage",
-	"bs-dashboard-userportlet-wikipage-description": "Usar unha páxina wiki para definir o widget",
+	"bs-dashboard-userportlet-wikipage-title": "Páxina wiki",
+	"bs-dashboard-userportlet-wikipage-description": "Usar unha páxina wiki para definir o trebello",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Páxina wiki",
 	"apihelp-bs-dashboard-task-param-dc": "Parámetro de control da caché. Usado por ExtJS.",
 	"apihelp-bs-dashboards-store-description": "Lista de todos os portlets",
@@ -23,6 +24,7 @@
 	"apihelp-bs-dashboards-tasks-description": "Garda a configuración do taboleiro",
 	"apihelp-bs-dashboards-tasks-summary": "Garda a configuración do taboleiro",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Devolve o contido para algúns widgets do taboleiro",
-	"apihelp-bs-dashboards-widgets-tasks-summary": "Devolve o contido para algúns widgets do taboleiro",
-	"action-dashboards-viewspecialpage-userdashboard": "ver a páxina especial \"{{int:userdashboard}}\""
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Devolve o contido para algúns trebellos do taboleiro",
+	"action-dashboards-viewspecialpage-userdashboard": "ver a páxina especial \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Acceso á páxina especial [[Special:UserDashboard]]"
 }
