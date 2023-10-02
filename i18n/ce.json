@@ -13,5 +13,7 @@
 	"admindashboard": "Куьйгалхочун панель",
 	"userdashboard": "Декъашхочун панель",
 	"bs-dashboard-userportlet-calendar-title": "Календарь",
-	"bs-dashboard-userportlet-calendar-description": "Календарь"
+	"bs-dashboard-userportlet-calendar-description": "Календарь",
+	"bs-dashboard-userportlet-wikipage-title": "Вики-агӀо",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Вики агӀо"
 }
