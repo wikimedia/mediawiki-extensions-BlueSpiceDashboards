@@ -161,7 +161,11 @@
 			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddDashboardConfigsTable::callback",
 			"\\BlueSpice\\Dashboards\\Hook\\LoadExtensionSchemaUpdates\\AddPostDatabaseUpdateMaintenance::callback"
 		],
-		"DeleteAccount": "\\BlueSpice\\Dashboards\\Hook\\DeleteAccount\\DeleteUserDashboard::callback"
+		"DeleteAccount": "\\BlueSpice\\Dashboards\\Hook\\DeleteAccount\\DeleteUserDashboard::callback",
+		"BSUsageTrackerRegisterCollectors": [
+			"\\BlueSpice\\Dashboards\\Hook\\BSUsageTrackerRegisterCollectors\\AdminDashboardModified::callback",
+			"\\BlueSpice\\Dashboards\\Hook\\BSUsageTrackerRegisterCollectors\\UserDashboardModified::callback"
+		]
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
