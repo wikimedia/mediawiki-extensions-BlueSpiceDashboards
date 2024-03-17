@@ -4,8 +4,8 @@ $specialPageAliases = [];
 
 /** English */
 $specialPageAliases['en'] = [
-	'AdminDashboard' => [ 'AdminDashboard','Admin dashboard' ],
-	'UserDashboard'  => [ 'UserDashboard','User dashboard' ],
+	'AdminDashboard' => [ 'AdminDashboard', 'Admin dashboard' ],
+	'UserDashboard'  => [ 'UserDashboard', 'User dashboard' ],
 ];
 
 /** German (Deutsch) */

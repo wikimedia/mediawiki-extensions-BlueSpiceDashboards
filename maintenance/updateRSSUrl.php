@@ -24,12 +24,12 @@ class BsDashboardsUpdateRSSUrl extends LoggedUpdateMaintenance {
 			$portletConfig = false;
 			$hasChange = false;
 
-			try{
+			try {
 				AtEase::suppressWarnings();
 				// backward compatible handling
 				$portletConfig = unserialize( $row->dc_config );
 				AtEase::restoreWarnings();
-			}catch ( Exception $e ) {
+			} catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}
 			if ( $portletConfig === false ) {

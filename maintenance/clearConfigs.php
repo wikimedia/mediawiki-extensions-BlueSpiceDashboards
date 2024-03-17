@@ -48,12 +48,12 @@ class BSDashBoardsClearConfigMaintenance extends LoggedUpdateMaintenance {
 			$sType = $row->dc_type;
 			$bHasChange = false;
 
-			try{
+			try {
 				AtEase::suppressWarnings();
 				// backward compatible handling
 				$aPortalConfig = unserialize( $row->dc_config );
 				AtEase::restoreWarnings();
-			}catch ( Exception $e ) {
+			} catch ( Exception $e ) {
 				$this->output( "Object in json only string\n" );
 			}
 			if ( $aPortalConfig === false ) {

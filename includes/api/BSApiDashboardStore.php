@@ -99,7 +99,7 @@ class BSApiDashboardStore extends BSApiExtJSStoreBase {
 		$sFieldValue = $aDataSet->groups;
 		$sFilterValue = $oFilter->value;
 
-		return in_array( $oFilter->value,  $aDataSet->groups );
+		return in_array( $oFilter->value, $aDataSet->groups );
 	}
 
 }
