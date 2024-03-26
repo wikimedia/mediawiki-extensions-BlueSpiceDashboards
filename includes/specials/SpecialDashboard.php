@@ -29,8 +29,8 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	 * @throws Exception
 	 */
 	protected function getPortalConfig() {
-		$oDbr = wfGetDB( DB_REPLICA );
-		$row = $oDbr->selectRow(
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$row = $dbr->selectRow(
 			'bs_dashboards_configs',
 			'*',
 			$this->getConds(),
