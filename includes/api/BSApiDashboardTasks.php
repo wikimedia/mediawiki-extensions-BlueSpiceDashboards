@@ -79,9 +79,9 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$iUserId = $this->getUser()->getId();
-		$oDbw->replace(
+		$dbw->replace(
 				'bs_dashboards_configs',
 				[
 					'dc_identifier'
@@ -115,12 +115,12 @@ class BSApiDashboardTasks extends BSApiTasksBase {
 			return $oResponse;
 		}
 
-		$oDbw = wfGetDB( DB_PRIMARY );
-		$oDbw->delete(
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw->delete(
 			'bs_dashboards_configs',
 			[ 'dc_type' => 'admin' ]
 		);
-		$oDbw->insert(
+		$dbw->insert(
 			'bs_dashboards_configs',
 			[
 				'dc_type' => 'admin',
