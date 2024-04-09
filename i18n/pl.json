@@ -3,9 +3,11 @@
 		"authors": [
 			"Chrumps",
 			"Rail",
-			"Railfail536"
+			"Railfail536",
+			"WaldiSt"
 		]
 	},
+	"bs-dashboards-desc": "Udostępnia pulpity nawigacyjne dla użytkowników i administratorów",
 	"bs-specialadmindashboard-label": "Panel",
 	"bs-dashboards-addportlet": "Dodaj portlet",
 	"bs-dashboards-portlets": "Portlety",
