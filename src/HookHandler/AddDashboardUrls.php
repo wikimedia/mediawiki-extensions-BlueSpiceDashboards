@@ -21,20 +21,26 @@ class AddDashboardUrls implements SkinTemplateNavigation__UniversalHook {
 		$spFactory = $services->getSpecialPageFactory();
 		$userGroupManager = $services->getUserGroupManager();
 
-		$links['user-menu']['userdashboard'] = [
-			'id' => 'pt-userdashboard',
-			'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
-			'text' => $spFactory->getPage( 'UserDashboard' )->getDescription(),
-			'position' => 120,
-		];
+		$spUserDashboard = $spFactory->getPage( 'UserDashboard' );
+		if ( $spUserDashboard ) {
+			$links['user-menu']['userdashboard'] = [
+				'id' => 'pt-userdashboard',
+				'href' => \SpecialPage::getTitleFor( 'UserDashboard' )->getLocalURL(),
+				'text' => $spUserDashboard->getDescription(),
+				'position' => 120,
+			];
+		}
 
 		if ( in_array( 'sysop', $userGroupManager->getUserGroups( $user ) ) ) {
-			$links['user-menu']['admindashboard'] = [
-				'id' => 'pt-admindashboard',
-				'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
-				'text' => $spFactory->getPage( 'AdminDashboard' )->getDescription(),
-				'position' => 130,
-			];
+			$spAdminDashboard = $spFactory->getPage( 'AdminDashboard' );
+			if ( $spUserDashboard ) {
+				$links['user-menu']['admindashboard'] = [
+					'id' => 'pt-admindashboard',
+					'href' => \SpecialPage::getTitleFor( 'AdminDashboard' )->getLocalURL(),
+					'text' => $spAdminDashboard->getDescription(),
+					'position' => 130,
+				];
+			}
 		}
 	}
 }
