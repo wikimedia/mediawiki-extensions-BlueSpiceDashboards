@@ -6,9 +6,9 @@
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
-	"bs-dashboards-desc": "Stellt Dashboards für Benutzer und Administratoren zur Verfügung",
+	"bs-dashboards-desc": "Stellt Dashboards f\u00fcr Benutzer und Administratoren zur Verf\u00fcgung",
 	"bs-specialadmindashboard-label": "Dashboard",
-	"bs-dashboards-addportlet": "Portlet hinzufügen",
+	"bs-dashboards-addportlet": "Portlet hinzuf\u00fcgen",
 	"bs-dashboards-portlets": "Portlets",
 	"prefs-dashboards": "Dashboards",
 	"bs-dashboards-pref-userdashboardonlogo": "Logo der Website verlinkt auf das Benutzerdashboard",
@@ -20,12 +20,12 @@
 	"bs-dashboard-userportlet-wikipage-description": "Verwende eine Seite, um das Widget zu definieren",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Seite",
 	"apihelp-bs-dashboard-task-param-dc": "Cache-Kontroll-Parameter. Verwendet von ExtJS.",
-	"apihelp-bs-dashboards-store-description": "Listet alle verfügbaren Portlets auf",
-	"apihelp-bs-dashboards-store-summary": "Listet alle verfügbaren Portlets auf",
+	"apihelp-bs-dashboards-store-description": "Listet alle verf\u00fcgbaren Portlets auf",
+	"apihelp-bs-dashboards-store-summary": "Listet alle verf\u00fcgbaren Portlets auf",
 	"apihelp-bs-dashboards-tasks-description": "Speichert die Dashboard-Konfiguration",
 	"apihelp-bs-dashboards-tasks-summary": "Speichert die Dashboard-Konfiguration",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Gibt den Inhalt für einige Dashboard-Widgets zurück",
-	"apihelp-bs-dashboards-widgets-tasks-summary": "Gibt den Inhalt für einige Dashboard-Widgets zurück",
-	"action-dashboards-viewspecialpage-userdashboard": "die Spezialseite „{{int:userdashboard}}“ anzusehen",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Gibt den Inhalt f\u00fcr einige Dashboard-Widgets zur\u00fcck",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Gibt den Inhalt f\u00fcr einige Dashboard-Widgets zur\u00fcck",
+	"action-dashboards-viewspecialpage-userdashboard": "die Spezialseite \u201e{{int:userdashboard}}\u201c anzusehen",
 	"right-dashboards-viewspecialpage-userdashboard": "Zugriff auf die Spezialseite [[Special:UserDashboard]]"
 }
