@@ -2,29 +2,29 @@
 	"@metadata": {
 		"authors": [
 			"Elisardojm",
-			"Toli\u00f1o"
+			"Toliño"
 		]
 	},
 	"bs-dashboards-desc": "Proporciona paneis de control para usuarios e administradores",
 	"bs-specialadmindashboard-label": "Panel de control",
-	"bs-dashboards-addportlet": "Engadir un m\u00f3dulo",
-	"bs-dashboards-portlets": "M\u00f3dulos",
+	"bs-dashboards-addportlet": "Engadir un módulo",
+	"bs-dashboards-portlets": "Módulos",
 	"prefs-dashboards": "Paneis de control",
 	"bs-dashboards-pref-userdashboardonlogo": "O logo do sitio liga co panel do usuario",
 	"admindashboard": "Panel de administrador",
 	"userdashboard": "Panel de usuario",
 	"bs-dashboard-userportlet-calendar-title": "Calendario",
 	"bs-dashboard-userportlet-calendar-description": "Calendario",
-	"bs-dashboard-userportlet-wikipage-title": "P\u00e1xina wiki",
-	"bs-dashboard-userportlet-wikipage-description": "Usar unha p\u00e1xina wiki para definir o trebello",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "P\u00e1xina wiki",
-	"apihelp-bs-dashboard-task-param-dc": "Par\u00e1metro de control da cach\u00e9. Usado por ExtJS.",
+	"bs-dashboard-userportlet-wikipage-title": "Páxina wiki",
+	"bs-dashboard-userportlet-wikipage-description": "Usar unha páxina wiki para definir o trebello",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Páxina wiki",
+	"apihelp-bs-dashboard-task-param-dc": "Parámetro de control da caché. Usado por ExtJS.",
 	"apihelp-bs-dashboards-store-description": "Lista de todos os portlets",
 	"apihelp-bs-dashboards-store-summary": "Lista de todos os portlets",
-	"apihelp-bs-dashboards-tasks-description": "Garda a configuraci\u00f3n do taboleiro",
-	"apihelp-bs-dashboards-tasks-summary": "Garda a configuraci\u00f3n do taboleiro",
-	"apihelp-bs-dashboards-widgets-tasks-description": "Devolve o contido para alg\u00fans widgets do taboleiro",
-	"apihelp-bs-dashboards-widgets-tasks-summary": "Devolve o contido para alg\u00fans trebellos do taboleiro",
-	"action-dashboards-viewspecialpage-userdashboard": "ver a p\u00e1xina especial \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Acceso \u00e1 p\u00e1xina especial [[Special:UserDashboard]]"
+	"apihelp-bs-dashboards-tasks-description": "Garda a configuración do taboleiro",
+	"apihelp-bs-dashboards-tasks-summary": "Garda a configuración do taboleiro",
+	"apihelp-bs-dashboards-widgets-tasks-description": "Devolve o contido para algúns widgets do taboleiro",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Devolve o contido para algúns trebellos do taboleiro",
+	"action-dashboards-viewspecialpage-userdashboard": "ver a páxina especial \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Acceso á páxina especial [[Special:UserDashboard]]"
 }

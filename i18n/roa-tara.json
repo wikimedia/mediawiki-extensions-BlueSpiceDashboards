@@ -4,7 +4,7 @@
 			"Joetaras"
 		]
 	},
-	"bs-dashboards-desc": "D\u00e8je le cruscotte pe le utinde e le amministrature",
+	"bs-dashboards-desc": "Dèje le cruscotte pe le utinde e le amministrature",
 	"bs-specialadmindashboard-label": "Cruscotte",
 	"bs-dashboards-addportlet": "Aggiunge 'nu portlet",
 	"bs-dashboards-portlets": "Portlet",
@@ -14,16 +14,16 @@
 	"userdashboard": "Cruscotte de l'utende",
 	"bs-dashboard-userportlet-calendar-title": "Calendarije",
 	"bs-dashboard-userportlet-calendar-description": "Calendarije",
-	"bs-dashboard-userportlet-wikipage-title": "UicchiP\u00e0gene",
-	"bs-dashboard-userportlet-wikipage-description": "Ause 'na p\u00e0gene de uicchi pe defin\u00ec stu widget",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "P\u00e0gene uicchi",
+	"bs-dashboard-userportlet-wikipage-title": "UicchiPàgene",
+	"bs-dashboard-userportlet-wikipage-description": "Ause 'na pàgene de uicchi pe definì stu widget",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Pàgene uicchi",
 	"apihelp-bs-dashboard-task-param-dc": "Parametre de condrolle d'a cache. Ausate da ExtJS.",
 	"apihelp-bs-dashboards-store-description": "Elenghe de le portlet disponibbele",
 	"apihelp-bs-dashboards-store-summary": "Elenghe de le portlet disponibbele",
-	"apihelp-bs-dashboards-tasks-description": "Regg\u00ecstre 'a configurazione d'u cruscotte",
-	"apihelp-bs-dashboards-tasks-summary": "Regg\u00ecstre 'a configurazione d'u cruscotte",
+	"apihelp-bs-dashboards-tasks-description": "Reggìstre 'a configurazione d'u cruscotte",
+	"apihelp-bs-dashboards-tasks-summary": "Reggìstre 'a configurazione d'u cruscotte",
 	"apihelp-bs-dashboards-widgets-tasks-description": "Torne 'u condenute pe de le uigget de cruscotte",
 	"apihelp-bs-dashboards-widgets-tasks-summary": "Torne 'u condenute pe de le uigget de cruscotte",
-	"action-dashboards-viewspecialpage-userdashboard": "'ndruche 'a p\u00e0gena speciale \"{{int:userdashboard}}\"",
-	"right-dashboards-viewspecialpage-userdashboard": "Tr\u00e0se jndr'\u00e0 p\u00e0gena speciale [[Special:UserDashboard]]"
+	"action-dashboards-viewspecialpage-userdashboard": "'ndruche 'a pàgena speciale \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Tràse jndr'à pàgena speciale [[Special:UserDashboard]]"
 }
