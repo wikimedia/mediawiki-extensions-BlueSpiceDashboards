@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Rail",
-			"Railfail536"
+			"Railfail536",
+			"WaldiSt"
 		]
 	},
 	"bs-specialadmindashboard-label": "Panel",
@@ -16,5 +17,6 @@
 	"bs-dashboard-userportlet-calendar-description": "Kalendarz",
 	"bs-dashboard-userportlet-wikipage-wiki-article": "Strona wiki",
 	"action-dashboards-viewspecialpage-userdashboard": "zobacz stronę specjalną „{{int:userdashboard}}”",
-	"right-dashboards-viewspecialpage-userdashboard": "Dostęp do strony specjalnej [[Special:UserDashboard]]."
+	"right-dashboards-viewspecialpage-userdashboard": "Dostęp do strony specjalnej [[Special:UserDashboard]].",
+	"bs-dashboards-desc": "Udostępnia pulpity nawigacyjne dla użytkowników i administratorów"
 }
