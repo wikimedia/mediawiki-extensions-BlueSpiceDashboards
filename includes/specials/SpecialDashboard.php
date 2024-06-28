@@ -61,7 +61,7 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 		}
 
 		$this->getOutput()->addJsConfigVars(
-			'bsPortalDependencies', $this->extractModules( $dbConfig, $portalConfig )
+			'bsPortalDependencies', $this->getModulesFromConfig( $portalConfig )
 		);
 		$this->getOutput()->addJsConfigVars(
 			'bsPortalConfig',
@@ -128,31 +128,6 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 	}
 
 	/**
-	 * Add modules from portlets
-	 *
-	 * @param array|null $dbConfig
-	 * @param array $portalConfig
-	 * @return array
-	 */
-	protected function extractModules( ?array $dbConfig, array $portalConfig ) {
-		$modules = $this->getModulesFromConfig( $portalConfig );
-
-		if ( $dbConfig !== null ) {
-			$allModules = [];
-			$dbPortlets = array_merge( ...$dbConfig );
-			foreach ( $dbPortlets as $portlet ) {
-				if ( isset( $portlet['type'] ) && isset( $modules[$portlet['type']] ) ) {
-					$allModules = array_merge( $allModules, $modules[$portlet['type']] );
-				}
-			}
-			return array_values( array_unique( $allModules ) );
-		} else {
-			$modules = array_values( $modules );
-			return array_values( array_unique( array_merge( ...$modules ) ) );
-		}
-	}
-
-	/**
 	 * Get all required RL modules from portal config retrieved by hook
 	 *
 	 * @param array $portalConfig
@@ -169,10 +144,10 @@ abstract class SpecialDashboard extends \BlueSpice\SpecialPage {
 			if ( !is_array( $portletModules ) ) {
 				$portletModules = [ $portletModules ];
 			}
-			$modules[$portlet['type']] = $portletModules;
+			$modules = array_merge( $modules, $portletModules );
 		}
 
-		return $modules;
+		return array_unique( $modules );
 	}
 
 	/**
