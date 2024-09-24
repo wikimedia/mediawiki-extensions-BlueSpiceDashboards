@@ -34,7 +34,6 @@
 						"commenter",
 						"editor",
 						"maintenanceadmin",
-						"reader",
 						"reviewer",
 						"structuremanager"
 					]
@@ -148,7 +147,10 @@
 	},
 	"HookHandlers": {
 		"addDashboardUrls": {
-			"class": "\\BlueSpice\\Dashboards\\HookHandler\\AddDashboardUrls"
+			"class": "\\BlueSpice\\Dashboards\\HookHandler\\AddDashboardUrls",
+			"services": [
+				"PermissionManager"
+			]
 		}
 	},
 	"Hooks": {
