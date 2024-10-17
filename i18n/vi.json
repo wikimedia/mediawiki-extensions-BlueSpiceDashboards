@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"SongNgu.xyz"
+		]
+	},
+	"bs-dashboards-desc": "Cung cấp bảng điều khiển cho người dùng và bảo quản viên",
+	"bs-specialadmindashboard-label": "Bảng điều khiển",
+	"bs-dashboards-addportlet": "Thêm khối dữ liệu",
+	"bs-dashboards-portlets": "Khối",
+	"prefs-dashboards": "Bảng điều khiển",
+	"bs-dashboards-pref-userdashboardonlogo": "Logo trang web liên kết đến bảng điều khiển người dùng",
+	"admindashboard": "Bảng điều khiển",
+	"userdashboard": "Bảng điều khiển người dùng",
+	"bs-dashboard-userportlet-calendar-title": "Lịch",
+	"bs-dashboard-userportlet-calendar-description": "Lịch",
+	"bs-dashboard-userportlet-wikipage-title": "Trang wiki",
+	"bs-dashboard-userportlet-wikipage-description": "Sử dụng trang wiki để định nghĩa ô dữ liệu",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Trang wiki",
+	"action-dashboards-viewspecialpage-userdashboard": "xem trang đặc biệt \"{{int:userdashboard}}\"",
+	"right-dashboards-viewspecialpage-userdashboard": "Truy cập vào trang đặc biệt [[Special:UserDashboard]]"
+}
