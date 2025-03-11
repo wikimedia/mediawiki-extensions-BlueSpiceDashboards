@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Huñvreüs"
 		]
 	},
 	"bs-specialadmindashboard-label": "Taolenn-vourzh",
-	"prefs-dashboards": "Taolennoù-bourzh",
+	"prefs-dashboards": "Taolennoù-stur",
 	"admindashboard": "Taolenn-vourzh ar merour",
 	"userdashboard": "Taolenn-vourzh an implijer",
 	"bs-dashboard-userportlet-calendar-title": "Deiziadur",
