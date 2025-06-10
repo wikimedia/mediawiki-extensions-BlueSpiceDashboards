@@ -1,9 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina",
+			"Tacsipacsi"
 		]
 	},
+	"bs-dashboards-desc": "Irányítópultokat biztosít felhasználók és adminisztrátorok számára",
+	"bs-specialadmindashboard-label": "Irányítópult",
+	"bs-dashboards-addportlet": "Portlet hozzáadása",
+	"bs-dashboards-portlets": "Portletek",
+	"prefs-dashboards": "Irányítópultok",
+	"bs-dashboards-pref-userdashboardonlogo": "A webhely logója a felhasználói irányítópultra mutat",
+	"admindashboard": "Adminisztrátori irányítópult",
+	"userdashboard": "Felhasználói irányítópult",
 	"bs-dashboard-userportlet-calendar-title": "Naptár",
-	"bs-dashboard-userportlet-calendar-description": "Naptár"
+	"bs-dashboard-userportlet-calendar-description": "Naptár",
+	"bs-dashboard-userportlet-wikipage-title": "WikiPage",
+	"bs-dashboard-userportlet-wikipage-description": "Wiki lap használata a widget definiálásához",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "Wiki lap",
+	"apihelp-bs-dashboard-task-param-dc": "Gyorsítótár-vezérlő paraméter. Az ExtJS használja.",
+	"apihelp-bs-dashboards-store-summary": "Felsorolja az összes elérhető portletet",
+	"apihelp-bs-dashboards-tasks-summary": "Menti az irányítópult konfigurációját",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "Néhány irányítópult-widget tartalmát adja vissza.",
+	"action-dashboards-viewspecialpage-userdashboard": "„{{int:userdashboard}}” speciális lap megtekintése",
+	"right-dashboards-viewspecialpage-userdashboard": "Hozzáférés a [[Special:UserDashboard]] speciális laphoz"
 }
