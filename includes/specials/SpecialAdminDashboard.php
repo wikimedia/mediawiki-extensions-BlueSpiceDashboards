@@ -2,7 +2,12 @@
 
 class SpecialAdminDashboard extends SpecialDashboard {
 	public function __construct() {
-		parent::__construct( 'AdminDashboard', 'wikiadmin' );
+		parent::__construct( 'AdminDashboard' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'wikiadmin';
 	}
 
 	/**

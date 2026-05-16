@@ -3,7 +3,12 @@
 class SpecialUserDashboard extends SpecialDashboard {
 
 	public function __construct() {
-		parent::__construct( 'UserDashboard', 'dashboards-viewspecialpage-userdashboard' );
+		parent::__construct( 'UserDashboard' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'dashboards-viewspecialpage-userdashboard';
 	}
 
 	/**
