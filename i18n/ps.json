@@ -1,10 +1,27 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"bs-dashboard-userportlet-calendar-title": "کالهنداره",
-	"bs-dashboard-userportlet-calendar-description": "کالهنداره",
-	"bs-dashboard-userportlet-wikipage-wiki-article": "ويکي مخ"
+	"bs-dashboards-desc": "کارنانو او پازوالانو ته ليددړې چمتو کوي",
+	"bs-specialadmindashboard-label": "ليددړه",
+	"bs-dashboards-addportlet": "پورټلېټ ورگډول",
+	"bs-dashboards-portlets": "پورټلېټونه",
+	"prefs-dashboards": "ليددړې",
+	"bs-dashboards-pref-userdashboardonlogo": "د کارن ليددړې ته د وېبپاڼې د نښان تړوني",
+	"admindashboard": "پازوال ليددړه",
+	"userdashboard": "کارن ليددړه",
+	"bs-dashboard-userportlet-calendar-title": "کليز",
+	"bs-dashboard-userportlet-calendar-description": "کليز",
+	"bs-dashboard-userportlet-wikipage-title": "ويکي‌مخ",
+	"bs-dashboard-userportlet-wikipage-description": "د پراخ‌توکي تعريفولو لپاره د ويکي‌مخ څخه کار واخلئ",
+	"bs-dashboard-userportlet-wikipage-wiki-article": "ويکي مخ",
+	"apihelp-bs-dashboard-task-param-dc": "د نيونگې کنترول پاراميتر. ExtJS له خوا کارول شوی.",
+	"apihelp-bs-dashboards-store-summary": "ټول شته پورټلېټونه لړليکوي",
+	"apihelp-bs-dashboards-tasks-summary": "د ليددړې ترتيب خوندي کوي",
+	"apihelp-bs-dashboards-widgets-tasks-summary": "د ليددړې ځينو پراخ‌توکو لپاره منځپانگه بېرته راگرځوي",
+	"action-dashboards-viewspecialpage-userdashboard": "\"{{int:userdashboard}}\" ځانگړی مخ کتل",
+	"right-dashboards-viewspecialpage-userdashboard": "[[Special:UserDashboard]] ځانگړي مخ ته لاسرسی"
 }
